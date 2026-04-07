@@ -1,0 +1,134 @@
+{
+  "common": {
+    "onlineCourses": "Online courses",
+    "brand": "JA Índio Jiu Jitsu"
+  },
+  "home": {
+    "heroTitle": "Online Brazilian Jiu-Jitsu courses with Fabiano Índio",
+    "heroSubtitle": "On-demand lessons, lifetime access, and the JA Índio methodology — wherever you are. Pick a single course or get the full bundle at a special price.",
+    "coursesSectionTitle": "Individual courses",
+    "coursesSectionSubtitle": "Each program focuses on one theme. Buy in one click or open the full sales page on the academy website."
+  },
+  "courses": {
+    "drills": {
+      "title": "Drill sequences",
+      "description": "Drill sequences that actually move your evolution forward."
+    },
+    "halfguard": {
+      "title": "Half guard",
+      "description": "The house specialty — take your half guard further than ever."
+    },
+    "nogi": {
+      "title": "NO-GI finishes",
+      "description": "The NO-GI finishes you need, straight to the point."
+    },
+    "guardpassing": {
+      "title": "Guard passing",
+      "description": "Full control on top with a complete guard passing system."
+    },
+    "openguard": {
+      "title": "Open guard",
+      "description": "Everything you need to turn your open guard into a weapon."
+    },
+    "coming-soon": {
+      "title": "New program",
+      "description": "Coming soon: another online course with Professor Fabiano Índio. Stay tuned."
+    }
+  },
+  "bundle": {
+    "badge": "Best value",
+    "title": "Full bundle",
+    "subtitle": "All six programs in one access: complete evolution in Jiu-Jitsu with Professor Fabiano Índio, at a special price.",
+    "promoLabel": "Promotional offer",
+    "promoHighlight": "All courses together",
+    "promoNote": "The checkout link will go live when the campaign is ready.",
+    "buyNow": "Buy now",
+    "buyNowSoon": "Buy now — coming soon",
+    "learnMore": "Learn more",
+    "themes": {
+      "drills": "Drill sequences",
+      "halfguard": "Half guard",
+      "nogi": "NO-GI finishes",
+      "guardpassing": "Guard passing",
+      "openguard": "Open guard",
+      "comingSoon": "New program (coming soon)"
+    }
+  },
+  "academy": {
+    "title": "Meet JA Índio in Pelotas",
+    "subtitle": "Online courses complement in-person training. Visit our school, explore the programs, and join the Índio Jiu Jitsu family.",
+    "cta": "Open on the academy website",
+    "mainSite": "Main website — indiobjj.com.br",
+    "links": {
+      "about": {
+        "label": "About us",
+        "description": "Our academy story and team."
+      },
+      "schedules": {
+        "label": "Schedules",
+        "description": "Find the best time to train."
+      },
+      "programs": {
+        "label": "Programs",
+        "description": "Classes for all ages and levels."
+      },
+      "testimonials": {
+        "label": "Testimonials",
+        "description": "What our students say."
+      },
+      "contact": {
+        "label": "Contact",
+        "description": "Get in touch and book a visit."
+      }
+    }
+  },
+  "footer": {
+    "motto": "Honor, morals, respect, and loyalty.",
+    "address": "Rua Doutor Amarante 779, Pelotas, Rio Grande do Sul, Brazil",
+    "academySocials": "Academy socials",
+    "indioSocials": "Professor Índio socials",
+    "lookingFor": "Looking for a place to train?",
+    "officialBefore": "Visit the",
+    "officialLink": "official website",
+    "officialAfter": "of our headquarters to learn about our history, programs, and units near you.",
+    "phoneLabel": "Phone:",
+    "emailLabel": "Email:",
+    "copyright": "©{year} Índio Jiu Jitsu | All rights reserved",
+    "developedBy": "Developed by"
+  },
+  "courseCard": {
+    "buyNow": "Buy now",
+    "learnMore": "Learn more",
+    "comingSoon": "Coming soon",
+    "learnMoreSoon": "More info soon",
+    "placeholderImageNote": "Image and course page will be announced soon."
+  },
+  "localeSwitcher": {
+    "switchToEn": "English",
+    "switchToPt": "Português"
+  },
+  "pacote": {
+    "metaTitle": "Full bundle — all online courses",
+    "metaDescription": "Promotional offer: all six JA Índio online Jiu-Jitsu programs in one bundle with Fabiano Índio. Details and checkout coming soon or when the link is available.",
+    "back": "← Back to courses",
+    "title": "Full bundle — all online courses",
+    "description": "Promotional offer: all six JA Índio online Jiu-Jitsu programs in one bundle with Fabiano Índio. Details and checkout coming soon or when the link is available.",
+    "buyNow": "Buy now",
+    "checkoutSoon": "Purchase link coming soon",
+    "academySite": "Academy website"
+  },
+  "seo": {
+    "defaultTitle": "Online BJJ courses | Fabiano Índio — JA Índio Jiu Jitsu",
+    "titleTemplate": "{title} | JA Índio online courses",
+    "defaultDescription": "Online Brazilian Jiu-Jitsu courses with Fabiano Índio: half guard, open guard, guard passing, NO-GI finishes, and drill sequences. Lifetime access. Full bundle at a special price.",
+    "keywords": "online bjj courses, brazilian jiu-jitsu online, Fabiano Índio, JA Índio Jiu Jitsu, half guard course, open guard course, guard passing, nogi course, no-gi, bjj drills, video bjj",
+    "ogAlt": "Online Brazilian Jiu-Jitsu courses — JA Índio Jiu Jitsu",
+    "itemListName": "JA Índio Jiu Jitsu online courses",
+    "itemListDescription": "Online BJJ courses: half guard, open guard, passing, NOGI, and drills with Fabiano Índio.",
+    "webSiteName": "Online courses — JA Índio Jiu Jitsu",
+    "webSiteDescription": "Online Brazilian Jiu-Jitsu course catalog with Professor Fabiano Índio: half guard, open guard, guard passing, NO-GI finishes, and drill sequences.",
+    "bundleCourseName": "Full bundle — JA Índio online courses",
+    "bundleCourseDescription": "Access to drill, half guard, NOGI, guard passing, open guard programs, and new content with Fabiano Índio.",
+    "pacoteWebPageName": "Full bundle — JA Índio Jiu Jitsu online courses"
+  }
+}

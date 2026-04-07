@@ -1,0 +1,134 @@
+{
+  "common": {
+    "onlineCourses": "Cursos online",
+    "brand": "JA Índio Jiu Jitsu"
+  },
+  "home": {
+    "heroTitle": "Cursos de Jiu-Jitsu online com Fabiano Índio",
+    "heroSubtitle": "Aulas gravadas, acesso vitalício e a metodologia da JA Índio — onde você estiver. Escolha um curso ou garanta o pacote completo com condição especial.",
+    "coursesSectionTitle": "Cursos avulsos",
+    "coursesSectionSubtitle": "Cada programa foca em um tema. Compre com um clique ou abra a página completa no site da academia."
+  },
+  "courses": {
+    "drills": {
+      "title": "Sequências Drills",
+      "description": "Sequências de drills que de fato fazem sua evolução andar."
+    },
+    "halfguard": {
+      "title": "Meia Guarda",
+      "description": "A especialidade da casa — eleve sua meia guarda como nunca."
+    },
+    "nogi": {
+      "title": "Finalizações NOGI",
+      "description": "Todas as finalizações NO-GI que você precisa, direto ao ponto."
+    },
+    "guardpassing": {
+      "title": "Passagens de Guarda",
+      "description": "Controle total por cima com um sistema completo de passagens de guarda."
+    },
+    "openguard": {
+      "title": "Guarda Aberta",
+      "description": "Tudo o que você precisa para transformar sua guarda aberta em arma."
+    },
+    "coming-soon": {
+      "title": "Novo programa",
+      "description": "Em breve: mais um curso online com o Mestre Fabiano Índio. Fique de olho."
+    }
+  },
+  "bundle": {
+    "badge": "Melhor valor",
+    "title": "Pacote completo",
+    "subtitle": "Os seis programas em um único acesso: evolução completa no Jiu-Jitsu com o Mestre Fabiano Índio, com preço especial.",
+    "promoLabel": "Oferta promocional",
+    "promoHighlight": "Todos os cursos juntos",
+    "promoNote": "Link de checkout será ativado quando a campanha estiver no ar.",
+    "buyNow": "Compre agora",
+    "buyNowSoon": "Compre agora — em breve",
+    "learnMore": "Saiba mais",
+    "themes": {
+      "drills": "Sequências Drills",
+      "halfguard": "Meia Guarda",
+      "nogi": "Finalizações NOGI",
+      "guardpassing": "Passagens de Guarda",
+      "openguard": "Guarda Aberta",
+      "comingSoon": "Novo programa (em breve)"
+    }
+  },
+  "academy": {
+    "title": "Conheça a JA Índio em Pelotas",
+    "subtitle": "Os cursos online complementam o treino presencial. Visite nossa escola, conheça os programas e faça parte da família Índio Jiu Jitsu.",
+    "cta": "Acessar no site da academia",
+    "mainSite": "Site principal — indiobjj.com.br",
+    "links": {
+      "about": {
+        "label": "Quem somos",
+        "description": "História da academia e da equipe."
+      },
+      "schedules": {
+        "label": "Horários",
+        "description": "Encontre o melhor horário para treinar."
+      },
+      "programs": {
+        "label": "Programas",
+        "description": "Turmas para todas as idades e níveis."
+      },
+      "testimonials": {
+        "label": "Depoimentos",
+        "description": "O que os alunos dizem sobre nós."
+      },
+      "contact": {
+        "label": "Contato",
+        "description": "Fale conosco e agende sua visita."
+      }
+    }
+  },
+  "footer": {
+    "motto": "Honra, moral, respeito e lealdade.",
+    "address": "Rua Doutor Amarante 779, Pelotas, Rio Grande do Sul, Brasil",
+    "academySocials": "Redes da Academia",
+    "indioSocials": "Redes do Mestre Índio",
+    "lookingFor": "Procurando onde treinar?",
+    "officialBefore": "Acesse o",
+    "officialLink": "site oficial",
+    "officialAfter": "da nossa matriz e conheça nossa história, programas e unidades perto de você.",
+    "phoneLabel": "Telefone:",
+    "emailLabel": "Email:",
+    "copyright": "©{year} Índio Jiu Jitsu | Todos os direitos reservados",
+    "developedBy": "Desenvolvido por"
+  },
+  "courseCard": {
+    "buyNow": "Compre agora",
+    "learnMore": "Saiba mais",
+    "comingSoon": "Em breve",
+    "learnMoreSoon": "Saiba mais em breve",
+    "placeholderImageNote": "Imagem e página do curso serão divulgadas em breve."
+  },
+  "localeSwitcher": {
+    "switchToEn": "English",
+    "switchToPt": "Português"
+  },
+  "pacote": {
+    "metaTitle": "Pacote completo — todos os cursos online",
+    "metaDescription": "Oferta promocional: os seis programas de Jiu-Jitsu online da JA Índio em um único pacote com Fabiano Índio. Detalhes e checkout em breve ou conforme disponibilidade do link.",
+    "back": "← Voltar aos cursos",
+    "title": "Pacote completo — todos os cursos online",
+    "description": "Oferta promocional: os seis programas de Jiu-Jitsu online da JA Índio em um único pacote com Fabiano Índio. Detalhes e checkout em breve ou conforme disponibilidade do link.",
+    "buyNow": "Compre agora",
+    "checkoutSoon": "Link de compra em breve",
+    "academySite": "Site da academia"
+  },
+  "seo": {
+    "defaultTitle": "Cursos de Jiu-Jitsu online | Fabiano Índio — JA Índio Jiu Jitsu",
+    "titleTemplate": "{title} | Cursos online JA Índio",
+    "defaultDescription": "Cursos online de Jiu-Jitsu com Fabiano Índio: meia guarda, guarda aberta, passagens de guarda, finalizações NOGI e sequências de drills. Acesso vitalício. Pacote completo com condição especial.",
+    "keywords": "cursos jiu-jitsu online, curso jiu jitsu online, Fabiano Índio, JA Índio Jiu Jitsu, curso meia guarda online, curso guarda aberta, curso passagens de guarda, curso nogi, curso no-gi, drills jiu jitsu, jiu-jitsu gravado",
+    "ogAlt": "Cursos de Jiu-Jitsu online — JA Índio Jiu Jitsu",
+    "itemListName": "Cursos online JA Índio Jiu Jitsu",
+    "itemListDescription": "Cursos de Jiu-Jitsu online: meia guarda, guarda aberta, passagens, NOGI e drills com Fabiano Índio.",
+    "webSiteName": "Cursos online — JA Índio Jiu Jitsu",
+    "webSiteDescription": "Catálogo de cursos de Jiu-Jitsu online do Mestre Fabiano Índio: meia guarda, guarda aberta, passagens de guarda, finalizações NOGI e sequências de drills.",
+    "bundleCourseName": "Pacote completo — cursos online JA Índio",
+    "bundleCourseDescription": "Acesso aos programas de drills, meia guarda, NOGI, passagens de guarda, guarda aberta e novos conteúdos com Fabiano Índio.",
+    "pacoteWebPageName": "Pacote completo — cursos online JA Índio Jiu Jitsu"
+  }
+}
