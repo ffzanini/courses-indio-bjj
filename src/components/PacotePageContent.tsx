@@ -1,15 +1,17 @@
-import { getTranslations } from "next-intl/server";
+import Link from "next/link";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { SiteFooter } from "@/components/SiteFooter";
 import { MAIN_SITE } from "@/constants/site";
 import { bundleThemeKeys } from "@/data/courses";
-import { Link } from "@/i18n/navigation";
+import { pathnameWithLocale } from "@/lib/locale-path";
 
 export async function PacotePageContent({
   checkout,
 }: {
   checkout: string | null;
 }) {
+  const locale = await getLocale();
   const t = await getTranslations("pacote");
   const tBundle = await getTranslations("bundle");
 
@@ -18,8 +20,8 @@ export async function PacotePageContent({
       <header className="border-b border-foreground/10 px-4 py-4 sm:px-6">
         <div className="mx-auto flex max-w-3xl items-center justify-between">
           <Link
-            href="/"
-            className="text-sm font-semibold text-guard-passing-theme hover:underline"
+            href={pathnameWithLocale("/", locale)}
+            className="text-sm font-semibold text-secondary hover:underline"
           >
             {t("back")}
           </Link>
@@ -55,7 +57,7 @@ export async function PacotePageContent({
             href={MAIN_SITE}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full border-2 border-foreground/20 px-8 py-3 text-center text-base font-semibold text-foreground transition-colors hover:border-guard-passing-theme hover:text-guard-passing-theme-dark"
+            className="inline-flex items-center justify-center rounded-full border-2 border-foreground/20 px-8 py-3 text-center text-base font-semibold text-foreground transition-colors hover:border-primary-ja hover:text-secondary"
           >
             {t("academySite")}
           </a>

@@ -18,57 +18,54 @@ export interface ListedCourse {
   isPlaceholder?: boolean;
 }
 
-const asset = (path: string) => `${MAIN_SITE}${path}`;
-
 export const listedCourses: ListedCourse[] = [
   {
     id: "drills",
-    imageUrl: asset("/images/courses/indio-curso-drills.webp"),
+    imageUrl: "/images/courses/drills-sequencia.webp",
     accent: "drills",
     checkoutUrl: "https://pay.kiwify.com.br/hkR1jY2",
-    learnMorePath: "/courses/drills",
-    learnMoreOnMainSite: true,
+    learnMorePath: "/drills",
+    learnMoreOnMainSite: false,
   },
   {
     id: "halfguard",
-    imageUrl: asset("/images/courses/indio-curso-meia-guarda.webp"),
+    imageUrl: "/images/courses/meia-guarda.webp",
     accent: "halfguard",
     checkoutUrl: "https://pay.kiwify.com.br/T8jqqT5",
-    learnMorePath: "/courses/halfguard",
-    learnMoreOnMainSite: true,
+    learnMorePath: "/halfguard",
+    learnMoreOnMainSite: false,
   },
   {
     id: "nogi",
-    imageUrl: asset("/images/courses/indio-curso-nogi.webp"),
+    imageUrl: "/images/courses/no-gi.webp",
     accent: "nogi",
     checkoutUrl: "https://pay.kiwify.com.br/9vQgsZI",
-    learnMorePath: "/courses/nogi",
-    learnMoreOnMainSite: true,
+    learnMorePath: "/nogi",
+    learnMoreOnMainSite: false,
   },
   {
     id: "guardpassing",
-    imageUrl: asset("/images/courses/indio-curso-passagens-guarda.svg"),
+    imageUrl: "/images/courses/passagens-de-guarda.jpg",
     accent: "guardpassing",
     checkoutUrl: "https://pay.kiwify.com.br/X4gDESY",
-    learnMorePath: "/courses/guardpassing",
-    learnMoreOnMainSite: true,
+    learnMorePath: "/guardpassing",
+    learnMoreOnMainSite: false,
   },
   {
     id: "openguard",
-    imageUrl: asset("/images/courses/indio-curso-guarda-aberta.webp"),
+    imageUrl: "/images/courses/guarda-aberta.webp",
     accent: "openguard",
     checkoutUrl: "https://pay.kiwify.com.br/BJSNRE2",
-    learnMorePath: "/courses/openguard",
-    learnMoreOnMainSite: true,
+    learnMorePath: "/openguard",
+    learnMoreOnMainSite: false,
   },
   {
-    id: "coming-soon",
-    imageUrl: null,
+    id: "escapes",
+    imageUrl: "/images/courses/saidas-escapadas.webp",
     accent: "neutral",
-    checkoutUrl: null,
-    learnMorePath: "#cursos",
+    checkoutUrl: "https://pay.kiwify.com.br/uXhtF8N",
+    learnMorePath: "/escapes",
     learnMoreOnMainSite: false,
-    isPlaceholder: true,
   },
 ];
 

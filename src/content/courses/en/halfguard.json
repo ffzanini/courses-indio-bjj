@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "title": "Master the half guard and turn that position into a powerful weapon, even against bigger opponents.",
+    "subtitle": "Build a solid, technical, and intelligent game that can neutralize pressure, control the fight, and attack efficiently from the half guard.",
+    "cta": "CLAIM MY SPOT!",
+    "students": "Lifetime access",
+    "lifetime": "7-day guarantee",
+    "guarantee": "100% secure checkout",
+    "videoTitle": "Half guard course",
+    "videoDescription": "Master the half guard and turn that position into a powerful weapon."
+  },
+  "problems": {
+    "title": "Maybe this sounds like you:",
+    "items": [
+      "You fall into half guard and only defend",
+      "Your opponent's pressure freezes you",
+      "You struggle to attack heavier opponents",
+      "You miss the timing of the transitions and get passed",
+      "You cannot connect defense and attack in the half guard",
+      "You think the half guard is only a survival position"
+    ],
+    "key": "Half guard without a method becomes a squeeze. Half guard built well becomes control and attack.",
+    "description": "The half guard is one of the most strategic positions in Jiu-Jitsu."
+  },
+  "method": {
+    "title": "In this course you learn a complete half guard system, from basic to advanced, with logic, progression, and real use in training.",
+    "items": [
+      "No improvising",
+      "No loose positions",
+      "You learn structure, concept, and execution"
+    ]
+  },
+  "benefits": {
+    "title": "What you will learn",
+    "subtitle": "",
+    "items": [
+      {
+        "icon": "📘",
+        "title": "The essential fundamentals of the half guard.",
+        "description": ""
+      },
+      {
+        "icon": "🔄",
+        "title": "Efficient transitions between half guard variations.",
+        "description": ""
+      },
+      {
+        "icon": "🧱",
+        "title": "The fundamental positions that hold the game together.",
+        "description": ""
+      },
+      {
+        "icon": "🛡️",
+        "title": "How to build an unbreakable defensive system.",
+        "description": ""
+      },
+      {
+        "icon": "⚔️",
+        "title": "How to turn the half guard from defense into a lethal offensive weapon.",
+        "description": ""
+      },
+      {
+        "icon": "🎯",
+        "title": "Precise, efficient attack sequences.",
+        "description": ""
+      }
+    ]
+  },
+  "directBenefits": {
+    "title": "Direct benefits",
+    "items": [
+      {
+        "icon": "🛡️",
+        "title": "Play half guard with more safety and control."
+      },
+      {
+        "icon": "💪",
+        "title": "Neutralize the pressure of bigger, stronger opponents."
+      },
+      {
+        "icon": "💡",
+        "title": "Know what to do in every phase of the fight."
+      },
+      {
+        "icon": "🔗",
+        "title": "Join a solid defense with efficient attacks."
+      },
+      {
+        "icon": "🎯",
+        "title": "Build a consistent, technical game that is hard to pass."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Special offer!",
+    "title": "Ready to change your half guard?",
+    "subtitle": "Click now and learn the method that turns the half guard into an offensive fortress in Jiu-Jitsu.",
+    "priceTitle": "How much will you invest to change your half guard?",
+    "lead": "Take a step forward on the mat and turn your half guard into a position of dominance, control, and attack.",
+    "from": "From",
+    "oldPrice": "R$ 197",
+    "bridge": "for only",
+    "price": "12x of R$ 9.30",
+    "installments": "or R$ 89.90 up front",
+    "includes": [
+      "Complete Half Guard course",
+      "Content organized from basic to advanced",
+      "A structured progression for steady improvement",
+      "Lifetime access"
+    ],
+    "button": "CLAIM MY SPOT!",
+    "secure": "100% secure purchase. You get access right after the payment is confirmed."
+  },
+  "guarantee": {
+    "title": "7-day satisfaction guarantee",
+    "subtitle": "Try the course for 7 days.",
+    "seal": "Guarantee",
+    "description": "If you are not satisfied, we refund 100% of your money. No paperwork.",
+    "noQuestions": "No paperwork. A full refund inside the guarantee window."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "stillDoubts": "Still have questions?",
+    "description": "We are here to help. Ask anything about the course.",
+    "whatsapp": "Message us on WhatsApp",
+    "items": [
+      {
+        "question": "How long do I have access?",
+        "answer": "Access is lifetime."
+      },
+      {
+        "question": "When do I get access?",
+        "answer": "You receive access immediately after the payment is confirmed."
+      },
+      {
+        "question": "How does the guarantee work?",
+        "answer": "Try the course for 7 days. If you are not satisfied, we refund 100% of your money. No paperwork."
+      },
+      {
+        "question": "What is included?",
+        "answer": "The complete Half Guard course, organized from basic to advanced, with a structured progression and lifetime access."
+      }
+    ]
+  }
+}

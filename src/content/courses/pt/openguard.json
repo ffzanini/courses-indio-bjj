@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "title": "Domine a Guarda Aberta e transforme essa posição em uma arma ofensiva real dentro do Jiu-Jitsu.",
+    "subtitle": "Construa um jogo técnico, inteligente e eficiente, capaz de controlar, atacar e finalizar adversários de qualquer nível a partir da Guarda Aberta.",
+    "cta": "GARANTIR MINHA VAGA!",
+    "students": "Acesso vitalício",
+    "lifetime": "Garantia de 7 dias",
+    "guarantee": "Compra 100% segura",
+    "videoTitle": "Curso de Guarda Aberta",
+    "videoDescription": "Domine a Guarda Aberta e transforme essa posição em uma arma ofensiva."
+  },
+  "problems": {
+    "title": "Talvez você se identifique com isso:",
+    "items": [
+      "Joga de guarda aberta, mas sente que falta direção no jogo",
+      "Aprende posições soltas, mas não consegue conectar os movimentos",
+      "Trava durante o rola por excesso de informação",
+      "Usa a guarda apenas para se defender e sobreviver",
+      "Perde o controle da luta por não entender o momento certo de atacar",
+      "Tem dificuldade em impor seu jogo contra adversários mais pesados"
+    ],
+    "key": "Guarda aberta sem método vira defesa, guarda aberta bem aplicada vira domínio.",
+    "description": "A Guarda Aberta é uma das posições mais completas do Jiu-Jitsu."
+  },
+  "method": {
+    "title": "Neste curso, você vai aprender os segredos da Guarda Aberta de forma prática, objetiva e aplicável no treino real.",
+    "items": [
+      "Nada de posições isoladas",
+      "Nada de excesso de teoria",
+      "Aqui você aprende o raciocínio por trás do jogo."
+    ]
+  },
+  "benefits": {
+    "title": "O que você vai aprender",
+    "subtitle": "",
+    "items": [
+      {
+        "icon": "📘",
+        "title": "Fundamentos essenciais da Guarda Aberta, do básico ao avançado.",
+        "description": ""
+      },
+      {
+        "icon": "⚔️",
+        "title": "Como transformar a Guarda Aberta de posição defensiva em arma ofensiva letal.",
+        "description": ""
+      },
+      {
+        "icon": "🎯",
+        "title": "Como estruturar um jogo ofensivo a partir da guarda.",
+        "description": ""
+      },
+      {
+        "icon": "🔗",
+        "title": "Entradas, controles e ataques com lógica e sequência.",
+        "description": ""
+      },
+      {
+        "icon": "⚙️",
+        "title": "Ajustes técnicos que fazem a Guarda Aberta funcionar contra qualquer biotipo.",
+        "description": ""
+      },
+      {
+        "icon": "👁️",
+        "title": "Leitura de distância, base e reação do adversário.",
+        "description": ""
+      }
+    ]
+  },
+  "directBenefits": {
+    "title": "Benefícios diretos para o aluno",
+    "items": [
+      {
+        "icon": "🛡️",
+        "title": "Jogar de Guarda Aberta com mais segurança e confiança."
+      },
+      {
+        "icon": "💡",
+        "title": "Ter clareza do que fazer em cada situação do combate."
+      },
+      {
+        "icon": "🔓",
+        "title": "Parar de travar durante o rola."
+      },
+      {
+        "icon": "🎯",
+        "title": "Desenvolver um jogo técnico, eficiente e difícil de ser passado."
+      },
+      {
+        "icon": "📈",
+        "title": "Evoluir de forma consistente, independentemente do nível."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Oferta especial!",
+    "title": "Pronto para evoluir sua Guarda Aberta?",
+    "subtitle": "Clique agora e aprenda o método que transforma a Guarda Aberta em uma arma real dentro do Jiu-Jitsu.",
+    "priceTitle": "Quanto você vai investir para evoluir sua Guarda Aberta?",
+    "lead": "Dê um passo à frente no tatame e transforme sua Guarda Aberta em uma posição de controle, ataque e finalização.",
+    "from": "De",
+    "oldPrice": "R$ 197",
+    "bridge": "por apenas",
+    "price": "12x de R$ 9,30",
+    "installments": "ou R$ 89,90 à vista",
+    "includes": [
+      "Curso completo de Guarda Aberta",
+      "Conteúdo direto ao ponto, sem excesso de informação",
+      "Método com progressão clara e lógica",
+      "Acesso vitalício"
+    ],
+    "button": "GARANTIR MINHA VAGA!",
+    "secure": "Compra 100% segura! Receba seu acesso imediatamente após a confirmação do pagamento."
+  },
+  "guarantee": {
+    "title": "Garantia de satisfação de 7 dias",
+    "subtitle": "Experimente o curso por 7 dias.",
+    "seal": "Garantia",
+    "description": "Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem burocracia!",
+    "noQuestions": "Sem burocracia. Reembolso de 100% dentro da garantia."
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "stillDoubts": "Ainda tem dúvidas?",
+    "description": "Estamos aqui pra ajudar. Pergunte o que quiser sobre o curso.",
+    "whatsapp": "Chama no WhatsApp",
+    "items": [
+      {
+        "question": "Por quanto tempo tenho acesso?",
+        "answer": "O acesso é vitalício."
+      },
+      {
+        "question": "Quando recebo o acesso?",
+        "answer": "Você recebe o acesso imediatamente após a confirmação do pagamento."
+      },
+      {
+        "question": "Como funciona a garantia?",
+        "answer": "Experimente o curso por 7 dias. Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem burocracia."
+      },
+      {
+        "question": "O que está incluso?",
+        "answer": "O curso completo de Guarda Aberta, com conteúdo direto ao ponto, método com progressão clara e acesso vitalício."
+      }
+    ]
+  }
+}

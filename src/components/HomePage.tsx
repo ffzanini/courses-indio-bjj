@@ -1,68 +1,82 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { Instrument_Serif } from "next/font/google";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { AcademyLinksSection } from "@/components/AcademyLinksSection";
-import { BundleFeaturedCard } from "@/components/BundleFeaturedCard";
 import { CourseCard } from "@/components/CourseCard";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { SiteFooter } from "@/components/SiteFooter";
-import { getBundleLearnMorePath, listedCourses } from "@/data/courses";
+import { listedCourses } from "@/data/courses";
 
-export function HomePage({
-  bundleCheckoutHref,
-}: {
-  bundleCheckoutHref: string | null;
-}) {
-  const t = useTranslations("home");
-  const tCommon = useTranslations("common");
+const fontDisplay = Instrument_Serif({
+  weight: "400",
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+function Emphasis({ text, phrase }: { text: string; phrase: string }) {
+  const index = text.indexOf(phrase);
+  if (index < 0) return text;
+  return (
+    <>
+      {text.slice(0, index)}
+      <em className="text-primary-ja italic">{phrase}</em>
+      {text.slice(index + phrase.length)}
+    </>
+  );
+}
+
+export async function HomePage() {
+  const locale = await getLocale();
+  const t = await getTranslations("home");
+  const tLocale = await getTranslations("localeSwitcher");
+  const localeLabel =
+    locale === "pt" ? tLocale("switchToEn") : tLocale("switchToPt");
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="border-b border-foreground/10 bg-background/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
-          <span className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-            {tCommon("onlineCourses")}
-          </span>
-          <div className="flex items-center gap-3">
-            <LocaleSwitcher />
-            <span className="text-right text-sm font-bold text-foreground">
-              {tCommon("brand")}
-            </span>
-          </div>
-        </div>
-      </header>
+    <div
+      className={`${fontDisplay.variable} flex min-h-screen flex-col bg-dark-theme text-white-theme`}
+    >
+      <div className="flex justify-end px-4 pt-5 sm:px-6">
+        <LocaleSwitcher locale={locale} label={localeLabel} tone="plain" />
+      </div>
 
       <main className="flex-1">
-        <section className="relative overflow-hidden px-4 pb-12 pt-16 sm:px-6 sm:pb-16 sm:pt-20 lg:pt-24">
-          <div
-            className="pointer-events-none absolute inset-0 bg-linear-to-b from-guard-passing-theme/15 via-transparent to-transparent"
-            aria-hidden
-          />
-          <div className="relative mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              {t("heroTitle")}
+        <section className="px-4 pt-16 pb-14 sm:px-6 sm:pt-24 sm:pb-16">
+          <div className="mx-auto max-w-3xl text-center">
+            <h1 className="bf-display text-4xl leading-tight font-normal sm:text-6xl">
+              <Emphasis text={t("heroTitle")} phrase="Fabiano Índio" />
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground sm:text-xl">
+            <div
+              className="mx-auto mt-6 h-1 w-16 bg-secondary"
+              aria-hidden
+            />
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/65">
               {t("heroSubtitle")}
             </p>
           </div>
         </section>
 
-        <section
-          id="cursos"
-          className="mx-auto max-w-6xl space-y-10 px-4 pb-16 sm:px-6 lg:space-y-14 lg:pb-24"
-        >
-          <BundleFeaturedCard
-            bundleCheckoutHref={bundleCheckoutHref}
-            learnMoreHref={getBundleLearnMorePath()}
-          />
+        <section id="cursos" className="border-t border-primary-ja bg-white-theme text-dark-theme">
+          <div className="mx-auto max-w-6xl space-y-10 px-4 py-16 sm:px-6 lg:space-y-14 lg:py-20">
+          <a
+            href="/blackfriday"
+            className="group flex flex-col items-start justify-between gap-5 rounded-3xl border-2 border-primary-ja bg-dark-theme px-6 py-6 text-white-theme shadow-[0_18px_50px_rgba(209,255,0,0.16)] sm:flex-row sm:items-center sm:px-8 sm:py-8"
+          >
+            <span className="bf-display text-2xl leading-tight font-normal sm:text-4xl">
+              <Emphasis text={t("blackfridayBanner")} phrase="Ultra Black Friday" />
+            </span>
+            <span className="shrink-0 rounded-full bg-primary-ja px-6 py-3.5 text-sm font-bold tracking-wide text-dark-theme uppercase shadow-[0_8px_24px_rgba(209,255,0,0.35)] transition group-hover:brightness-110">
+              {t("blackfridayBannerCta")}
+            </span>
+          </a>
 
           <div>
-            <h2 className="text-center text-2xl font-bold text-foreground sm:text-3xl">
+            <h2 className="bf-display text-center text-3xl font-normal sm:text-4xl">
               {t("coursesSectionTitle")}
             </h2>
-            <p className="mx-auto mt-2 max-w-xl text-center text-muted-foreground">
+            <p className="mx-auto mt-3 max-w-xl text-center text-dark-theme/60">
               {t("coursesSectionSubtitle")}
             </p>
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -70,6 +84,7 @@ export function HomePage({
                 <CourseCard key={course.id} course={course} index={index} />
               ))}
             </div>
+          </div>
           </div>
         </section>
 

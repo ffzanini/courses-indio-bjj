@@ -8,3 +8,8 @@ export function bundleCheckoutUrl(): string | null {
   const u = process.env.NEXT_PUBLIC_KIWIFY_BUNDLE_URL;
   return u && u.trim() !== "" ? u.trim() : null;
 }
+
+export function blackfridayCheckoutUrl(): string | null {
+  const u = process.env.NEXT_PUBLIC_KIWIFY_BLACKFRIDAY_URL;
+  return u && u.trim() !== "" ? u.trim() : null;
+}

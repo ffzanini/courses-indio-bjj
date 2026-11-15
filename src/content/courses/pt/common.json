@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "courseHalfGuardTitle": "Meia Guarda",
+    "courseOpenGuardTitle": "Guarda Aberta",
+    "courseDrillsTitle": "Sequências Drills",
+    "courseNogiTitle": "Finalizações NOGI",
+    "courseGuardPassingTitle": "Passagens de Guarda",
+    "courseHalfGuardDesc": "Domine a meia guarda e transforme essa posição em uma arma poderosa.",
+    "courseOpenGuardDesc": "Domine a guarda aberta e transforme essa posição em uma arma ofensiva.",
+    "courseDrillsDesc": "Melhore seu gás, mobilidade, consciência corporal e velocidade de raciocínio.",
+    "courseNogiDesc": "Domine as finalizações do NO GI e encerre a luta de qualquer posição.",
+    "courseGuardPassingDesc": "Domine as passagens de guarda e assuma o controle total da luta.",
+    "courseEscapesTitle": "Saídas e Escapadas",
+    "courseEscapesDesc": "Saia das piores posições com técnica, inteligência e controle emocional."
+  },
+  "buttons": {
+    "learnMore": "Conheça mais →"
+  },
+  "credibility": "+ de 3 mil alunos em + de 15 anos ensinando",
+  "otherCourses": {
+    "title": "Outros cursos",
+    "subtitle": "Confira nossos outros cursos e encontre o que combina com você."
+  }
+}

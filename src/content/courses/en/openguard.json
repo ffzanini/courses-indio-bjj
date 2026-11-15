@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "title": "Master the open guard and turn that position into a real offensive weapon in Jiu-Jitsu.",
+    "subtitle": "Build a technical, intelligent, and efficient game that can control, attack, and submit opponents of any level from the open guard.",
+    "cta": "CLAIM MY SPOT!",
+    "students": "Lifetime access",
+    "lifetime": "7-day guarantee",
+    "guarantee": "100% secure checkout",
+    "videoTitle": "Open guard course",
+    "videoDescription": "Master the open guard and turn that position into an offensive weapon."
+  },
+  "problems": {
+    "title": "Maybe this sounds like you:",
+    "items": [
+      "You play open guard, but the game has no direction",
+      "You learn isolated positions and cannot connect the movements",
+      "You freeze during the roll because there is too much information",
+      "You use the guard only to defend and survive",
+      "You lose control of the fight because you do not know when to attack",
+      "You struggle to impose your game against heavier opponents"
+    ],
+    "key": "Open guard without a method becomes defense. Open guard applied well becomes dominance.",
+    "description": "The open guard is one of the most complete positions in Jiu-Jitsu."
+  },
+  "method": {
+    "title": "In this course you learn the secrets of the open guard in a practical, objective way you can use in real training.",
+    "items": [
+      "No isolated positions",
+      "No excess theory",
+      "You learn the thinking behind the game."
+    ]
+  },
+  "benefits": {
+    "title": "What you will learn",
+    "subtitle": "",
+    "items": [
+      {
+        "icon": "📘",
+        "title": "The essential fundamentals of the open guard, from basic to advanced.",
+        "description": ""
+      },
+      {
+        "icon": "⚔️",
+        "title": "How to turn the open guard from a defensive position into a lethal offensive weapon.",
+        "description": ""
+      },
+      {
+        "icon": "🎯",
+        "title": "How to build an offensive game from the guard.",
+        "description": ""
+      },
+      {
+        "icon": "🔗",
+        "title": "Entries, controls, and attacks with logic and sequence.",
+        "description": ""
+      },
+      {
+        "icon": "⚙️",
+        "title": "Technical adjustments that make the open guard work against any body type.",
+        "description": ""
+      },
+      {
+        "icon": "👁️",
+        "title": "Reading distance, base, and your opponent's reaction.",
+        "description": ""
+      }
+    ]
+  },
+  "directBenefits": {
+    "title": "Direct benefits",
+    "items": [
+      {
+        "icon": "🛡️",
+        "title": "Play open guard with more safety and confidence."
+      },
+      {
+        "icon": "💡",
+        "title": "Know what to do in every situation of the fight."
+      },
+      {
+        "icon": "🔓",
+        "title": "Stop freezing during the roll."
+      },
+      {
+        "icon": "🎯",
+        "title": "Build a technical, efficient game that is hard to pass."
+      },
+      {
+        "icon": "📈",
+        "title": "Improve consistently, whatever your level."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Special offer!",
+    "title": "Ready to improve your open guard?",
+    "subtitle": "Click now and learn the method that turns the open guard into a real weapon in Jiu-Jitsu.",
+    "priceTitle": "How much will you invest to improve your open guard?",
+    "lead": "Take a step forward on the mat and turn your open guard into a position of control, attack, and submission.",
+    "from": "From",
+    "oldPrice": "R$ 197",
+    "bridge": "for only",
+    "price": "12x of R$ 9.30",
+    "installments": "or R$ 89.90 up front",
+    "includes": [
+      "Complete Open Guard course",
+      "Straight-to-the-point content, without too much information",
+      "A method with a clear, logical progression",
+      "Lifetime access"
+    ],
+    "button": "CLAIM MY SPOT!",
+    "secure": "100% secure purchase. You get access right after the payment is confirmed."
+  },
+  "guarantee": {
+    "title": "7-day satisfaction guarantee",
+    "subtitle": "Try the course for 7 days.",
+    "seal": "Guarantee",
+    "description": "If you are not satisfied, we refund 100% of your money. No paperwork.",
+    "noQuestions": "No paperwork. A full refund inside the guarantee window."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "stillDoubts": "Still have questions?",
+    "description": "We are here to help. Ask anything about the course.",
+    "whatsapp": "Message us on WhatsApp",
+    "items": [
+      {
+        "question": "How long do I have access?",
+        "answer": "Access is lifetime."
+      },
+      {
+        "question": "When do I get access?",
+        "answer": "You receive access immediately after the payment is confirmed."
+      },
+      {
+        "question": "How does the guarantee work?",
+        "answer": "Try the course for 7 days. If you are not satisfied, we refund 100% of your money. No paperwork."
+      },
+      {
+        "question": "What is included?",
+        "answer": "The complete Open Guard course, with straight-to-the-point content, a clear progression, and lifetime access."
+      }
+    ]
+  }
+}

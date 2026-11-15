@@ -1,32 +1,24 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { MAIN_SITE } from "@/constants/site";
 import { socialsAcademia, socialsIndio } from "@/constants/socials";
-import { Link as LocalizedLink } from "@/i18n/navigation";
+import { pathnameWithLocale } from "@/lib/locale-path";
 
 const LOGO_URL = `${MAIN_SITE}/images/logos/ja-indio-logo.webp`;
 
-export function SiteFooter() {
+export async function SiteFooter() {
   const yearNow = new Date().getFullYear();
-  const t = useTranslations("footer");
+  const locale = await getLocale();
+  const t = await getTranslations("footer");
 
   return (
-    <motion.footer
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-      className="bg-dark-theme px-4 sm:px-6 lg:px-8 xl:px-18"
-    >
+    <footer className="cv-auto fade-in bg-dark-theme px-4 sm:px-6 lg:px-8 xl:px-18">
       <div className="flex flex-col lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:items-center lg:justify-between">
         <div className="flex flex-col items-center">
-          <LocalizedLink
-            href="/"
+          <Link
+            href={pathnameWithLocale("/", locale)}
             prefetch={false}
             className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-2 text-sm font-normal text-white-theme"
           >
@@ -35,10 +27,11 @@ export function SiteFooter() {
               alt="JA Índio Jiu Jitsu"
               width={240}
               height={30}
+              quality={75}
               className="h-auto w-[200px] max-w-full object-contain sm:w-[240px]"
               style={{ height: "auto" }}
             />
-          </LocalizedLink>
+          </Link>
           <p className="text-xl font-semibold text-white-theme lg:pb-4">
             {t("motto")}
           </p>
@@ -50,7 +43,7 @@ export function SiteFooter() {
                   <b className="text-lg">{t("phoneLabel")}</b> (53) 99188-6599
                 </p>
                 <p className="gap-2 text-lg text-white-theme">
-                  <b className="text-lg">{t("emailLabel")}</b>
+                  <b className="text-lg">{t("emailLabel")}</b>{" "}
                   fabianoindio@hotmail.com
                 </p>
               </div>
@@ -60,10 +53,12 @@ export function SiteFooter() {
 
         <div className="flex flex-col pt-6 text-center text-white-theme md:gap-10 lg:pt-0">
           <div>
-            <h3 className="mb-2 text-lg font-semibold">{t("academySocials")}</h3>
+            <h3 className="mb-2 text-lg font-semibold">
+              {t("academySocials")}
+            </h3>
             <div className="flex justify-center gap-4 text-2xl">
               {socialsAcademia.map(({ href, icon: Icon, name }) => (
-                <motion.a
+                <a
                   aria-label={name}
                   target="_blank"
                   key={href}
@@ -72,7 +67,7 @@ export function SiteFooter() {
                   className="flex items-center justify-center p-2 transition-all duration-300"
                 >
                   <Icon size={32} className="hover:text-primary-ja" />
-                </motion.a>
+                </a>
               ))}
             </div>
           </div>
@@ -81,7 +76,7 @@ export function SiteFooter() {
             <h3 className="mb-2 text-lg font-semibold">{t("indioSocials")}</h3>
             <div className="flex justify-center gap-4 text-2xl">
               {socialsIndio.map(({ href, icon: Icon, name }) => (
-                <motion.a
+                <a
                   aria-label={name}
                   target="_blank"
                   key={href}
@@ -90,7 +85,7 @@ export function SiteFooter() {
                   className="flex items-center justify-center p-2 transition-all duration-300"
                 >
                   <Icon size={32} className="hover:text-primary-ja" />
-                </motion.a>
+                </a>
               ))}
             </div>
           </div>
@@ -135,6 +130,6 @@ export function SiteFooter() {
           </span>
         </p>
       </div>
-    </motion.footer>
+    </footer>
   );
 }

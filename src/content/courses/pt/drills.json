@@ -1,0 +1,125 @@
+{
+  "hero": {
+    "title": "Melhore seu gás, mobilidade, consciência corporal e velocidade de raciocínio",
+    "subtitle": "",
+    "cta": "GARANTIR MINHA VAGA!",
+    "students": "Acesso vitalício",
+    "lifetime": "Garantia de 7 dias",
+    "guarantee": "Compra 100% segura",
+    "videoTitle": "Curso de Sequências Drills",
+    "videoDescription": "Melhore seu gás, mobilidade, consciência corporal e velocidade de raciocínio"
+  },
+  "problems": {
+    "title": "Talvez você se identifique com isso:",
+    "items": [
+      "Está cansado de assistir vídeos aleatórios na internet e não conseguir aplicar no treino",
+      "Fica travado durante o rola, sem lembrar o que deveria fazer",
+      "Sente que falta mobilidade, fluidez e segurança nas posições",
+      "É amassado por parceiros menos graduados porque não domina os movimentos básicos",
+      "Tem medo de se lesionar por executar as posições de forma incorreta"
+    ],
+    "key": "Os Drills são a chave para desenvolver fluidez, mobilidade e confiança dentro do tatame.",
+    "description": "Com este curso, você vai ter um passo a passo prático, direto ao ponto, para dominar os movimentos essenciais e transformar sua base no Jiu-Jitsu. Nada de firulas. Nada de perder tempo. Apenas o básico que realmente funciona."
+  },
+  "benefits": {
+    "title": "O que você vai aprender",
+    "subtitle": "",
+    "items": [
+      {
+        "icon": "🏃",
+        "title": "Drills para mobilidade, performance e prevenção de lesões.",
+        "description": ""
+      },
+      {
+        "icon": "💡",
+        "title": "Clareza para nunca mais “dar branco” durante o rola.",
+        "description": ""
+      },
+      {
+        "icon": "🌊",
+        "title": "Fluidez para encaixar posições com eficiência e segurança.",
+        "description": ""
+      },
+      {
+        "icon": "🎯",
+        "title": "Movimentos fundamentais como rolamentos, fuga de quadril e levantada técnica.",
+        "description": ""
+      },
+      {
+        "icon": "⚔️",
+        "title": "Como aplicar cada posição em situações reais de treino e competição.",
+        "description": ""
+      }
+    ]
+  },
+  "directBenefits": {
+    "title": "Benefícios diretos para o aluno",
+    "evolve": {
+      "title": "Evoluir mais rápido sem precisar decorar centenas de posições.",
+      "desc": ""
+    },
+    "clean": {
+      "title": "Ter um jogo limpo, seguro e eficiente.",
+      "desc": ""
+    },
+    "confidence": {
+      "title": "Melhorar a confiança em qualquer situação dentro do tatame.",
+      "desc": ""
+    },
+    "mobility": {
+      "title": "Aumentar sua mobilidade e resistência, diminuindo o risco de lesões.",
+      "desc": ""
+    }
+  },
+  "cta": {
+    "badge": "Oferta especial!",
+    "title": "Não perca mais tempo sendo amassado no tatame ou travando no meio do rola.",
+    "subtitle": "Clique agora e garanta sua vaga no curso que vai transformar sua base no Jiu-Jitsu.",
+    "priceTitle": "Quanto você vai investir na sua evolução no Jiu-Jitsu?",
+    "lead": "Dê um passo à frente no tatame e construa a base sólida que vai transformar sua fluidez, segurança e confiança nos treinos.",
+    "from": "De",
+    "oldPrice": "R$ 297",
+    "bridge": "por apenas",
+    "price": "12x de R$ 9,30",
+    "installments": "ou R$ 89,90 à vista",
+    "includes": [
+      "Curso completo com mais de 60 aulas práticas.",
+      "Passo a passo para dominar os drills fundamentais.",
+      "Acesso vitalício.",
+      "Bônus exclusivos incluídos (válidos hoje)."
+    ],
+    "button": "GARANTIR MINHA VAGA!",
+    "secure": "Compra 100% segura! Receba seu acesso imediatamente após a confirmação do pagamento."
+  },
+  "guarantee": {
+    "title": "Garantia de satisfação de 7 dias",
+    "subtitle": "Experimente o curso por 7 dias.",
+    "seal": "Garantia",
+    "description": "Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem burocracia!",
+    "noQuestions": "Sem burocracia. Reembolso de 100% dentro da garantia."
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "stillDoubts": "Ainda tem dúvidas?",
+    "description": "Estamos aqui pra ajudar. Pergunte o que quiser sobre o curso.",
+    "whatsapp": "Chama no WhatsApp",
+    "items": [
+      {
+        "question": "Por quanto tempo tenho acesso?",
+        "answer": "O acesso é vitalício."
+      },
+      {
+        "question": "Como funciona a garantia?",
+        "answer": "Experimente o curso por 7 dias. Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem burocracia."
+      },
+      {
+        "question": "Quando recebo o acesso?",
+        "answer": "Você recebe o acesso imediatamente após a confirmação do pagamento."
+      },
+      {
+        "question": "O que está incluso?",
+        "answer": "O curso completo com mais de 60 aulas práticas, o passo a passo dos drills fundamentais, acesso vitalício e os bônus exclusivos incluídos."
+      }
+    ]
+  }
+}

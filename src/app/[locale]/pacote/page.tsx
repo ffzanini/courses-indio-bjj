@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
-
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 import { PacotePageContent } from "@/components/PacotePageContent";
@@ -15,6 +14,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!(routing.locales as readonly string[]).includes(locale)) {
     return {};
   }
+
+  setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "pacote" });
   const tSeo = await getTranslations({ locale, namespace: "seo" });
@@ -31,6 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: {
         "pt-BR": pathnameWithLocale("/pacote", "pt"),
         en: pathnameWithLocale("/pacote", "en"),
+        "x-default": pathnameWithLocale("/pacote", "pt"),
       },
     },
     openGraph: {
@@ -39,8 +41,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: absoluteUrl("/pacote", locale),
       siteName: tSeo("webSiteName"),
       locale: locale === "pt" ? "pt_BR" : "en_US",
+      alternateLocale: locale === "pt" ? ["en_US"] : ["pt_BR"],
       type: "website",
-      images: [{ url: `${MAIN_SITE}/images/visit-card.png` }],
+      images: [
+        {
+          url: `${MAIN_SITE}/images/visit-card.png`,
+          width: 1120,
+          height: 630,
+          alt: tSeo("ogAlt"),
+        },
+      ],
     },
   };
 }
@@ -50,6 +60,8 @@ export default async function PacotePage({ params }: Props) {
   if (!(routing.locales as readonly string[]).includes(locale)) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "pacote" });
   const tSeo = await getTranslations({ locale, namespace: "seo" });

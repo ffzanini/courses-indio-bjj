@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "title": "Master guard passing and take full control of the fight, no matter your opponent's game.",
+    "subtitle": "Build a game of pressure, precision, and control that can shut down any guard and secure top dominance safely.",
+    "cta": "CLAIM MY SPOT!",
+    "students": "Lifetime access",
+    "lifetime": "7-day guarantee",
+    "guarantee": "100% secure checkout",
+    "videoTitle": "Guard passing course",
+    "videoDescription": "Master guard passing and take full control of the fight."
+  },
+  "problems": {
+    "title": "Maybe this sounds like you:",
+    "items": [
+      "You can sweep, but you do not know how to consolidate control",
+      "You get stuck in your opponent's guard and do not know how to pass",
+      "You get lost against modern guards like De La Riva, lasso, or 50/50",
+      "You use strength, but your passes are not efficient",
+      "You miss clear chances to dominate the fight",
+      "You cannot connect the pass with offensive progression"
+    ],
+    "key": "Sweeping without knowing how to pass puts you back at zero. Passing the guard is taking control of the fight.",
+    "description": "Guard passing is what decides who dominates the match."
+  },
+  "method": {
+    "title": "In this course you learn a complete guard passing system that works in any scenario and against any style.",
+    "items": [
+      "No improvising.",
+      "No relying on strength.",
+      "You learn technique, reading, and precise execution."
+    ]
+  },
+  "benefits": {
+    "title": "What you will learn",
+    "subtitle": "",
+    "items": [
+      {
+        "icon": "🔗",
+        "title": "How to connect passes with offensive progressions and back attacks.",
+        "description": ""
+      },
+      {
+        "icon": "🧭",
+        "title": "How to shut down open guard, half guard, and modern guards.",
+        "description": ""
+      },
+      {
+        "icon": "📈",
+        "title": "Guard passes from the basics to advanced.",
+        "description": ""
+      },
+      {
+        "icon": "⚙️",
+        "title": "How to apply efficient pressure and break your opponent's defensive structure.",
+        "description": ""
+      },
+      {
+        "icon": "🎯",
+        "title": "Techniques to pass De La Riva, lasso, 50/50, and other complex systems.",
+        "description": ""
+      },
+      {
+        "icon": "🛡️",
+        "title": "Berimbolo defense and how to neutralize modern attacks.",
+        "description": ""
+      }
+    ]
+  },
+  "directBenefits": {
+    "title": "Direct benefits",
+    "items": [
+      {
+        "icon": "🔓",
+        "title": "Stop getting stuck in your opponent's guard."
+      },
+      {
+        "icon": "💪",
+        "title": "Build a solid, efficient pressure game."
+      },
+      {
+        "icon": "📌",
+        "title": "Consolidate control after sweeps."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Control opponents with more safety and authority."
+      },
+      {
+        "icon": "🎯",
+        "title": "Become a complete, respected passer."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Special offer!",
+    "title": "Stop getting stuck in guard and take control of the fight",
+    "subtitle": "Click now and learn the method that turns your guard passes into a real tool for dominance in Jiu-Jitsu.",
+    "priceTitle": "How much will you invest to master guard passing?",
+    "lead": "Take a step forward on the mat and develop the ability to control and dominate any opponent.",
+    "from": "From",
+    "oldPrice": "R$ 197",
+    "bridge": "for only",
+    "price": "12x of R$ 9.30",
+    "installments": "or R$ 89.90 up front",
+    "includes": [
+      "Complete Guard Passing course",
+      "A structured, progressive system",
+      "Content you can use in training and competition",
+      "Lifetime access"
+    ],
+    "button": "CLAIM MY SPOT!",
+    "secure": "100% secure purchase. You get access right after the payment is confirmed."
+  },
+  "guarantee": {
+    "title": "7-day satisfaction guarantee",
+    "subtitle": "Try the course for 7 days.",
+    "seal": "Guarantee",
+    "description": "If you are not satisfied, we refund 100% of your money. No paperwork.",
+    "noQuestions": "No paperwork. A full refund inside the guarantee window."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "stillDoubts": "Still have questions?",
+    "description": "Our team is ready to help with any question about the course.",
+    "whatsapp": "Message us on WhatsApp",
+    "items": [
+      {
+        "question": "Will I learn to pass modern guards?",
+        "answer": "Yes. The course includes techniques for De La Riva, lasso, 50/50, and other complex systems, plus berimbolo defense."
+      },
+      {
+        "question": "How long do I have access?",
+        "answer": "Access is lifetime."
+      },
+      {
+        "question": "When do I get access?",
+        "answer": "You receive access immediately after the payment is confirmed."
+      },
+      {
+        "question": "How does the guarantee work?",
+        "answer": "Try the course for 7 days. If you are not satisfied, we refund 100% of your money. No paperwork."
+      }
+    ]
+  }
+}

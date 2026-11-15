@@ -19,6 +19,15 @@ export function proxy(request: NextRequest) {
 
   const segments = pathname.split("/").filter(Boolean);
   const first = segments[0];
+
+  if (first === "blackfriday") {
+    return NextResponse.next();
+  }
+
+  if ((first === "pt" || first === "en") && segments[1] === "blackfriday") {
+    return NextResponse.redirect(new URL("/blackfriday", request.url), 308);
+  }
+
   const hasLocalePrefix = isValidLocale(first);
 
   if (!hasLocalePrefix) {
@@ -40,6 +49,6 @@ export const config = {
   matcher: [
     "/",
     "/(pt|en)/:path*",
-    "/((?!_next|_vercel|.*\\..*).*)",
+    "/((?!_next|_vercel|blackfriday|.*\\..*).*)",
   ],
 };

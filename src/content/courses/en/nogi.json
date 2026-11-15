@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "title": "Master no-gi submissions and finish the fight from any position, without relying on points.",
+    "subtitle": "Build a lethal, efficient, straight-to-the-point game that can submit opponents in any scenario of the fight.",
+    "cta": "CLAIM MY SPOT!",
+    "students": "Lifetime access",
+    "lifetime": "7-day guarantee",
+    "guarantee": "100% secure checkout",
+    "videoTitle": "NO GI submissions course",
+    "videoDescription": "Master no-gi submissions and finish the fight from any position."
+  },
+  "problems": {
+    "title": "Maybe this sounds like you:",
+    "items": [
+      "You keep the game moving, but you cannot finish the fight",
+      "You reach good positions and freeze when it is time to submit",
+      "You wear yourself out in no-gi scoring wars",
+      "You feel you lack the fine detail to finish efficiently",
+      "You miss clear chances because you do not see the openings",
+      "You struggle to finish both from the top and from the bottom"
+    ],
+    "key": "In no-gi, whoever does not finish survives. Whoever finishes dominates.",
+    "description": "Submissions are the essence of no-gi."
+  },
+  "method": {
+    "title": "In this course you learn traumatic, precise, and efficient submissions you can use in real training and competition.",
+    "items": [
+      "No bureaucratic game.",
+      "No relying on advantage or points.",
+      "The focus here is finishing the fight."
+    ]
+  },
+  "benefits": {
+    "title": "What you will learn",
+    "subtitle": "",
+    "items": [
+      {
+        "icon": "🎯",
+        "title": "No-gi submissions from the top and the bottom, from basic to advanced.",
+        "description": ""
+      },
+      {
+        "icon": "⚔️",
+        "title": "Attacks from guard, mount, the back, and pressure situations.",
+        "description": ""
+      },
+      {
+        "icon": "🔄",
+        "title": "How to turn defensive positions, like the truck, into fatal attacks.",
+        "description": ""
+      },
+      {
+        "icon": "⏱️",
+        "title": "Reading openings and the timing to apply the finishing move.",
+        "description": ""
+      },
+      {
+        "icon": "💡",
+        "title": "How to restore the finisher's instinct in your game.",
+        "description": ""
+      },
+      {
+        "icon": "⚙️",
+        "title": "Fine adjustments to finish with less strength and more efficiency.",
+        "description": ""
+      }
+    ]
+  },
+  "directBenefits": {
+    "title": "Direct benefits",
+    "items": [
+      {
+        "icon": "🎯",
+        "title": "Submit opponents without relying on points."
+      },
+      {
+        "icon": "⚡",
+        "title": "Save energy and avoid long, draining fights."
+      },
+      {
+        "icon": "⚔️",
+        "title": "Have offensive options from any position."
+      },
+      {
+        "icon": "💪",
+        "title": "Play no-gi with more confidence, aggression, and control."
+      },
+      {
+        "icon": "🏆",
+        "title": "Build a respected and dangerous game."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Special offer!",
+    "title": "Stop winning on points and losing in practice",
+    "subtitle": "Click now and learn the fastest path to finish the fight in no-gi with full technical control.",
+    "priceTitle": "How much will you invest to become a finisher?",
+    "lead": "Take a step forward on the mat and turn your no-gi game into a real submission weapon.",
+    "from": "From",
+    "oldPrice": "R$ 197",
+    "bridge": "for only",
+    "price": "12x of R$ 9.30",
+    "installments": "or R$ 89.90 up front",
+    "includes": [
+      "More than 1 hour of no-gi submissions only",
+      "Straight-to-the-point content, no filler",
+      "From basic to advanced, with a clear progression",
+      "Lifetime access."
+    ],
+    "button": "CLAIM MY SPOT!",
+    "secure": "100% secure purchase. You get access right after the payment is confirmed."
+  },
+  "guarantee": {
+    "title": "7-day satisfaction guarantee",
+    "subtitle": "Try the course for 7 days.",
+    "seal": "Guarantee",
+    "description": "If you are not satisfied, we refund 100% of your money. No paperwork.",
+    "noQuestions": "No paperwork. A full refund inside the guarantee window."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "stillDoubts": "Still have questions?",
+    "description": "We are here to help. Ask anything about the course.",
+    "whatsapp": "Message us on WhatsApp",
+    "items": [
+      {
+        "question": "Is the course only about submissions?",
+        "answer": "Yes. It is more than 1 hour of no-gi submissions only, from basic to advanced, straight to the point."
+      },
+      {
+        "question": "How long do I have access?",
+        "answer": "Access is lifetime."
+      },
+      {
+        "question": "When do I get access?",
+        "answer": "You receive access immediately after the payment is confirmed."
+      },
+      {
+        "question": "How does the guarantee work?",
+        "answer": "Try the course for 7 days. If you are not satisfied, we refund 100% of your money. No paperwork."
+      }
+    ]
+  }
+}

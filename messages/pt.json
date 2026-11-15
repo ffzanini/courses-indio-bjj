@@ -1,38 +1,41 @@
 {
   "common": {
     "onlineCourses": "Cursos online",
-    "brand": "JA Índio Jiu Jitsu"
+    "brand": "JA Índio Jiu Jitsu",
+    "backHome": "Todos os cursos"
   },
   "home": {
     "heroTitle": "Cursos de Jiu-Jitsu online com Fabiano Índio",
-    "heroSubtitle": "Aulas gravadas, acesso vitalício e a metodologia da JA Índio — onde você estiver. Escolha um curso ou garanta o pacote completo com condição especial.",
+    "heroSubtitle": "Aulas gravadas, acesso vitalício e a metodologia da JA Índio Jiu Jitsu — onde você estiver. Acesse os cursos e veja o que interessa para o seu jogo.",
     "coursesSectionTitle": "Cursos avulsos",
-    "coursesSectionSubtitle": "Cada programa foca em um tema. Compre com um clique ou abra a página completa no site da academia."
+    "coursesSectionSubtitle": "Cada curso foca em um tema específico. Compre com um clique ou abra a página completa para mais informações.",
+    "blackfridayBanner": "Ultra Black Friday: todos os cursos, com acesso vitalício. Condição imperdível até 19/11.",
+    "blackfridayBannerCta": "Ver a oferta"
   },
   "courses": {
     "drills": {
       "title": "Sequências Drills",
-      "description": "Sequências de drills que de fato fazem sua evolução andar."
+      "description": "Melhore seu gás, mobilidade, consciência corporal e velocidade de raciocínio."
     },
     "halfguard": {
       "title": "Meia Guarda",
-      "description": "A especialidade da casa — eleve sua meia guarda como nunca."
+      "description": "Domine a meia guarda e transforme essa posição em uma arma poderosa."
     },
     "nogi": {
       "title": "Finalizações NOGI",
-      "description": "Todas as finalizações NO-GI que você precisa, direto ao ponto."
+      "description": "Domine as finalizações do NO GI e encerre a luta de qualquer posição."
     },
     "guardpassing": {
       "title": "Passagens de Guarda",
-      "description": "Controle total por cima com um sistema completo de passagens de guarda."
+      "description": "Domine as passagens de guarda e assuma o controle total da luta."
     },
     "openguard": {
       "title": "Guarda Aberta",
-      "description": "Tudo o que você precisa para transformar sua guarda aberta em arma."
+      "description": "Domine a guarda aberta e transforme essa posição em uma arma ofensiva."
     },
-    "coming-soon": {
-      "title": "Novo programa",
-      "description": "Em breve: mais um curso online com o Mestre Fabiano Índio. Fique de olho."
+    "escapes": {
+      "title": "Saídas e Escapadas",
+      "description": "Saia das piores posições com técnica, inteligência e controle emocional."
     }
   },
   "bundle": {
@@ -51,12 +54,12 @@
       "nogi": "Finalizações NOGI",
       "guardpassing": "Passagens de Guarda",
       "openguard": "Guarda Aberta",
-      "comingSoon": "Novo programa (em breve)"
+      "comingSoon": "Saídas e Escapadas"
     }
   },
   "academy": {
     "title": "Conheça a JA Índio em Pelotas",
-    "subtitle": "Os cursos online complementam o treino presencial. Visite nossa escola, conheça os programas e faça parte da família Índio Jiu Jitsu.",
+    "subtitle": "Os cursos online complementam o treino presencial. Visite nossa escola, conheça os programas e faça parte da família JA Índio Jiu Jitsu.",
     "cta": "Acessar no site da academia",
     "mainSite": "Site principal — indiobjj.com.br",
     "links": {
@@ -106,6 +109,10 @@
   "localeSwitcher": {
     "switchToEn": "English",
     "switchToPt": "Português"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "home": "← Início"
   },
   "pacote": {
     "metaTitle": "Pacote completo — todos os cursos online",

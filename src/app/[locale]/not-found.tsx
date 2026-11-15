@@ -1,16 +1,20 @@
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
+import { getLocale, getTranslations } from "next-intl/server";
 
-export default function NotFound() {
+import { pathnameWithLocale } from "@/lib/locale-path";
+
+export default async function NotFound() {
+  const locale = await getLocale();
+  const t = await getTranslations("notFound");
+
   return (
     <div className="flex min-h-[50vh] flex-col items-center justify-center gap-4 px-4 text-center">
-      <p className="text-lg text-muted-foreground">
-        Página não encontrada / Page not found
-      </p>
+      <p className="text-lg text-muted-foreground">{t("title")}</p>
       <Link
-        href="/"
-        className="font-semibold text-guard-passing-theme hover:underline"
+        href={pathnameWithLocale("/", locale)}
+        className="font-semibold text-secondary hover:underline"
       >
-        ← Home
+        {t("home")}
       </Link>
     </div>
   );

@@ -1,0 +1,31 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { RiArrowUpLine } from "react-icons/ri";
+
+export function ScrollToTopButton() {
+  const [isVisible, setIsVisible] = useState(false);
+  const pathname = usePathname();
+  const label = pathname.startsWith("/en") ? "Back to top" : "Voltar ao topo";
+
+  useEffect(() => {
+    const onScroll = () => setIsVisible(window.scrollY > 100);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  if (!isVisible) return null;
+
+  return (
+    <button
+      type="button"
+      aria-label={label}
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      className="fixed right-4 bottom-12 z-50 cursor-pointer rounded-full bg-primary-ja p-2 opacity-80 transition-transform hover:scale-110"
+    >
+      <RiArrowUpLine size={24} className="text-dark-theme" />
+    </button>
+  );
+}

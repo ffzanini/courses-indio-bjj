@@ -41,6 +41,7 @@ export async function buildCoursesItemListJsonLd(locale: string) {
         name: tCourse(`${course.id}.title`),
         description: tCourse(`${course.id}.description`),
         url,
+        ...(course.imageUrl ? { image: course.imageUrl } : {}),
         provider,
       },
     });

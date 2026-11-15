@@ -35,3 +35,5 @@ yarn-error.log*
 # sitemap (generated)
 public/sitemap*.xml
 public/robots.txt
+
+AGENTS.md

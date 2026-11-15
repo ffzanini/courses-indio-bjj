@@ -1,48 +1,10 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import type { ListedCourse } from "@/data/courses";
 import { resolveLearnMoreUrl } from "@/data/courses";
-import { cn } from "@/lib/utils";
-
-const accentRing: Record<ListedCourse["accent"], string> = {
-  drills: "ring-drills-theme/40 hover:ring-drills-theme/70",
-  halfguard: "ring-half-guard-theme/40 hover:ring-half-guard-theme/70",
-  nogi: "ring-nogi-theme/40 hover:ring-nogi-theme/70",
-  guardpassing: "ring-guard-passing-theme/40 hover:ring-guard-passing-theme/70",
-  openguard: "ring-open-guard-theme/40 hover:ring-open-guard-theme/70",
-  neutral: "ring-foreground/15 hover:ring-foreground/25",
-};
-
-const accentBar: Record<ListedCourse["accent"], string> = {
-  drills: "bg-drills-theme",
-  halfguard: "bg-half-guard-theme",
-  nogi: "bg-nogi-theme",
-  guardpassing: "bg-guard-passing-theme",
-  openguard: "bg-open-guard-theme",
-  neutral: "bg-foreground/20",
-};
-
-const accentCtaBg: Record<ListedCourse["accent"], string> = {
-  drills: "bg-drills-theme",
-  halfguard: "bg-half-guard-theme",
-  nogi: "bg-nogi-theme",
-  guardpassing: "bg-guard-passing-theme",
-  openguard: "bg-open-guard-theme",
-  neutral: "",
-};
-
-const accentCtaText: Record<ListedCourse["accent"], string> = {
-  drills: "text-white",
-  halfguard: "text-dark-theme",
-  nogi: "text-dark-theme",
-  guardpassing: "text-white",
-  openguard: "text-white",
-  neutral: "",
-};
+import { pathnameWithLocale } from "@/lib/locale-path";
 
 function CourseImage({
   course,
@@ -60,6 +22,7 @@ function CourseImage({
       src={course.imageUrl}
       alt={title}
       fill
+      quality={75}
       unoptimized={isSvg}
       className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -67,38 +30,31 @@ function CourseImage({
   );
 }
 
-export function CourseCard({
+export async function CourseCard({
   course,
   index,
 }: {
   course: ListedCourse;
   index: number;
 }) {
-  const t = useTranslations("courses");
-  const tCard = useTranslations("courseCard");
+  const locale = await getLocale();
+  const t = await getTranslations("courses");
+  const tCard = await getTranslations("courseCard");
   const title = t(`${course.id}.title`);
   const description = t(`${course.id}.description`);
-  const learnMore = resolveLearnMoreUrl(course);
+  const learnMore =
+    course.learnMoreOnMainSite || course.learnMorePath.startsWith("#")
+      ? resolveLearnMoreUrl(course)
+      : pathnameWithLocale(course.learnMorePath, locale);
+  const learnMoreExternal = learnMore.startsWith("http");
   const hasCheckout = Boolean(course.checkoutUrl);
 
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.35, delay: index * 0.06 }}
-      className={cn(
-        "group flex flex-col overflow-hidden rounded-2xl bg-card shadow-sm ring-2 ring-inset transition-shadow",
-        accentRing[course.accent],
-      )}
+    <article
+      style={{ animationDelay: `${index * 60}ms` }}
+      className="rise-in group flex flex-col overflow-hidden rounded-2xl bg-card shadow-sm ring-1 ring-dark-theme/10 transition-shadow hover:ring-secondary/40"
     >
-      <div className="relative aspect-video w-full overflow-hidden bg-foreground/5">
-        <div
-          className={cn(
-            "absolute left-0 top-0 z-10 h-1 w-full",
-            accentBar[course.accent],
-          )}
-          aria-hidden
-        />
+      <div className="relative aspect-square w-full overflow-hidden bg-foreground/5">
         {course.imageUrl ? (
           <CourseImage course={course} title={title} />
         ) : (
@@ -126,11 +82,7 @@ export function CourseCard({
             href={course.checkoutUrl!}
             target="_blank"
             rel="noopener noreferrer"
-            className={cn(
-              "flex items-center justify-center py-3.5 text-center text-sm font-semibold transition-opacity hover:opacity-90",
-              accentCtaBg[course.accent],
-              accentCtaText[course.accent],
-            )}
+            className="flex items-center justify-center bg-secondary py-3.5 text-center text-sm font-semibold text-white transition-opacity hover:opacity-90"
           >
             {tCard("buyNow")}
           </a>
@@ -143,7 +95,7 @@ export function CourseCard({
           <span className="flex items-center justify-center border-l border-foreground/10 py-3.5 text-center text-sm text-muted-foreground">
             {tCard("learnMoreSoon")}
           </span>
-        ) : (
+        ) : learnMoreExternal ? (
           <a
             href={learnMore}
             target="_blank"
@@ -152,8 +104,15 @@ export function CourseCard({
           >
             {tCard("learnMore")}
           </a>
+        ) : (
+          <Link
+            href={learnMore}
+            className="flex items-center justify-center border-l border-foreground/10 py-3.5 text-center text-sm font-semibold text-foreground transition-colors hover:bg-foreground/5"
+          >
+            {tCard("learnMore")}
+          </Link>
         )}
       </div>
-    </motion.article>
+    </article>
   );
 }

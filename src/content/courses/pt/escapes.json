@@ -1,0 +1,147 @@
+{
+  "hero": {
+    "title": "Aprenda a sair das piores posições do Jiu-Jitsu com técnica, inteligência e controle emocional.",
+    "subtitle": "Transforme sua defesa em uma arma estratégica, dominando escapadas eficientes que impedem o adversário de controlar, finalizar e destruir seu jogo.",
+    "cta": "GARANTIR MINHA VAGA!",
+    "students": "Acesso vitalício",
+    "lifetime": "Garantia de 7 dias",
+    "guarantee": "Compra 100% segura",
+    "videoTitle": "Curso de Saídas e Escapadas",
+    "videoDescription": "Transforme sua defesa em uma arma estratégica, dominando escapadas eficientes que impedem o adversário de controlar e finalizar seu jogo."
+  },
+  "problems": {
+    "title": "Talvez você se identifique com isso:",
+    "items": [
+      "Fica preso na montada sem saber como escapar",
+      "Se desespera quando pegam suas costas",
+      "Gasta energia tentando sair na força",
+      "Trava quando enfrenta adversários mais pesados",
+      "Consegue sobreviver por alguns segundos, mas acaba finalizado",
+      "Aprende defesas soltas, mas não entende o momento certo de aplicar"
+    ],
+    "key": "Quem domina as saídas controla o combate mesmo nas piores situações.",
+    "description": "Defesa eficiente é o que separa lutadores comuns de atletas difíceis de finalizar."
+  },
+  "method": {
+    "title": "Neste curso, você vai aprender um sistema completo de saídas e escapadas aplicado ao treino real.",
+    "items": [
+      "Nada de movimentos aleatórios",
+      "Nada de técnicas impossíveis de aplicar",
+      "Aqui você aprende lógica, timing e controle"
+    ]
+  },
+  "benefits": {
+    "title": "O que você vai aprender",
+    "subtitle": "Um sistema completo de saídas e escapadas aplicado ao treino real.",
+    "items": [
+      {
+        "icon": "🧗",
+        "title": "Escapadas da montada, costas e posições de pressão extrema."
+      },
+      {
+        "icon": "🧠",
+        "title": "Como manter a calma e recuperar o controle mesmo sob pressão."
+      },
+      {
+        "icon": "📐",
+        "title": "Gestão de espaço, alavancas e movimentação inteligente."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Defesas técnicas contra triângulo, armlock e estrangulamentos."
+      },
+      {
+        "icon": "⚙️",
+        "title": "Como desconstruir o controle do adversário sem desperdiçar energia."
+      },
+      {
+        "icon": "🔁",
+        "title": "Reposições fluidas para sair da defesa e voltar ao ataque."
+      },
+      {
+        "icon": "👁️",
+        "title": "Leitura de pressão, base e distribuição de peso do oponente."
+      },
+      {
+        "icon": "🎯",
+        "title": "Como se tornar um lutador difícil de controlar e finalizar."
+      }
+    ]
+  },
+  "directBenefits": {
+    "title": "Benefícios diretos para o aluno",
+    "items": [
+      {
+        "icon": "⚡",
+        "title": "Economizar energia durante os rolas."
+      },
+      {
+        "icon": "💪",
+        "title": "Ter mais confiança para lutar contra qualquer adversário."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Desenvolver uma defesa sólida e inteligente."
+      },
+      {
+        "icon": "🧭",
+        "title": "Entender exatamente o que fazer nas situações de pressão."
+      },
+      {
+        "icon": "🔁",
+        "title": "Transformar defesa em oportunidade de recuperação e ataque."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Oferta especial!",
+    "title": "Pronto para nunca mais ficar travado nas posições ruins?",
+    "subtitle": "Clique agora e aprenda o método que transforma defesa em controle dentro do Jiu-Jitsu.",
+    "priceTitle": "Quanto vale não se sentir perdido nas piores posições do combate?",
+    "lead": "Dê um passo à frente no tatame e aprenda o método que transforma sobrevivência em controle.",
+    "from": "De",
+    "oldPrice": "R$ 197",
+    "bridge": "por apenas",
+    "price": "12x de R$ 9,30",
+    "installments": "ou R$ 89,90 à vista",
+    "includes": [
+      "Curso completo de Saídas e Escapadas",
+      "Conteúdo direto ao ponto e aplicável no treino real",
+      "Método com progressão clara e objetiva",
+      "Acesso vitalício"
+    ],
+    "button": "GARANTIR MINHA VAGA!",
+    "secure": "Compra 100% segura! Receba seu acesso imediatamente após a confirmação do pagamento."
+  },
+  "guarantee": {
+    "title": "Garantia de satisfação de 7 dias",
+    "subtitle": "Experimente o curso por 7 dias.",
+    "seal": "Garantia",
+    "description": "Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem burocracia!",
+    "noQuestions": "Sem burocracia. Reembolso de 100% dentro da garantia."
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "stillDoubts": "Ainda tem dúvidas?",
+    "description": "Fale com a equipe sobre saídas, escapadas e o acesso ao curso.",
+    "whatsapp": "Chama no WhatsApp",
+    "items": [
+      {
+        "question": "Por quanto tempo tenho acesso?",
+        "answer": "O acesso é vitalício."
+      },
+      {
+        "question": "Como funciona a garantia?",
+        "answer": "Experimente o curso por 7 dias. Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem burocracia."
+      },
+      {
+        "question": "Quando recebo o acesso?",
+        "answer": "Você recebe o acesso imediatamente após a confirmação do pagamento."
+      },
+      {
+        "question": "O que está incluso?",
+        "answer": "O curso completo de Saídas e Escapadas, com conteúdo direto ao ponto, método com progressão clara e acesso vitalício."
+      }
+    ]
+  }
+}

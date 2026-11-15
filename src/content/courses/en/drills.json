@@ -1,0 +1,125 @@
+{
+  "hero": {
+    "title": "Improve your gas tank, mobility, body awareness, and speed of thought",
+    "subtitle": "",
+    "cta": "CLAIM MY SPOT!",
+    "students": "Lifetime access",
+    "lifetime": "7-day guarantee",
+    "guarantee": "100% secure checkout",
+    "videoTitle": "Drill sequences course",
+    "videoDescription": "Improve your gas tank, mobility, body awareness, and speed of thought"
+  },
+  "problems": {
+    "title": "Maybe this sounds like you:",
+    "items": [
+      "You are tired of watching random videos online and not being able to use them in training",
+      "You freeze during the roll and cannot remember what you should do",
+      "You feel a lack of mobility, flow, and safety in positions",
+      "Less experienced partners smash you because you do not own the basic movements",
+      "You are afraid of getting injured by doing positions the wrong way"
+    ],
+    "key": "Drills are the key to developing flow, mobility, and confidence on the mat.",
+    "description": "With this course you get a practical, straight-to-the-point path to master the essential movements and change your Jiu-Jitsu base. No fluff. No wasted time. Only the basics that actually work."
+  },
+  "benefits": {
+    "title": "What you will learn",
+    "subtitle": "",
+    "items": [
+      {
+        "icon": "🏃",
+        "title": "Drills for mobility, performance, and injury prevention.",
+        "description": ""
+      },
+      {
+        "icon": "💡",
+        "title": "Clarity so you never blank out during a roll again.",
+        "description": ""
+      },
+      {
+        "icon": "🌊",
+        "title": "Flow to connect positions with efficiency and safety.",
+        "description": ""
+      },
+      {
+        "icon": "🎯",
+        "title": "Fundamental movements such as rolls, hip escapes, and the technical stand-up.",
+        "description": ""
+      },
+      {
+        "icon": "⚔️",
+        "title": "How to apply each position in real training and competition.",
+        "description": ""
+      }
+    ]
+  },
+  "directBenefits": {
+    "title": "Direct benefits",
+    "evolve": {
+      "title": "Improve faster without memorizing hundreds of positions.",
+      "desc": ""
+    },
+    "clean": {
+      "title": "Have a clean, safe, and efficient game.",
+      "desc": ""
+    },
+    "confidence": {
+      "title": "Feel more confident in any situation on the mat.",
+      "desc": ""
+    },
+    "mobility": {
+      "title": "Increase your mobility and endurance, and lower the risk of injury.",
+      "desc": ""
+    }
+  },
+  "cta": {
+    "badge": "Special offer!",
+    "title": "Stop wasting time getting smashed or freezing in the middle of the roll.",
+    "subtitle": "Click now and claim your spot in the course that will change your Jiu-Jitsu base.",
+    "priceTitle": "How much will you invest in your Jiu-Jitsu evolution?",
+    "lead": "Take a step forward on the mat and build the solid base that will change your flow, safety, and confidence in training.",
+    "from": "From",
+    "oldPrice": "R$ 297",
+    "bridge": "for only",
+    "price": "12x of R$ 9.30",
+    "installments": "or R$ 89.90 up front",
+    "includes": [
+      "Complete course with more than 60 practical lessons.",
+      "A step-by-step path to master the fundamental drills.",
+      "Lifetime access.",
+      "Exclusive bonuses included (valid today)."
+    ],
+    "button": "CLAIM MY SPOT!",
+    "secure": "100% secure purchase. You get access right after the payment is confirmed."
+  },
+  "guarantee": {
+    "title": "7-day satisfaction guarantee",
+    "subtitle": "Try the course for 7 days.",
+    "seal": "Guarantee",
+    "description": "If you are not satisfied, we refund 100% of your money. No paperwork.",
+    "noQuestions": "No paperwork. A full refund inside the guarantee window."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "stillDoubts": "Still have questions?",
+    "description": "We are here to help. Ask anything about the course.",
+    "whatsapp": "Message us on WhatsApp",
+    "items": [
+      {
+        "question": "How long do I have access?",
+        "answer": "Access is lifetime."
+      },
+      {
+        "question": "How does the guarantee work?",
+        "answer": "Try the course for 7 days. If you are not satisfied, we refund 100% of your money. No paperwork."
+      },
+      {
+        "question": "When do I get access?",
+        "answer": "You receive access immediately after the payment is confirmed."
+      },
+      {
+        "question": "What is included?",
+        "answer": "The complete course with more than 60 practical lessons, the step-by-step fundamental drills, lifetime access, and the exclusive bonuses."
+      }
+    ]
+  }
+}

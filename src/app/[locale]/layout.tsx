@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
+import { fontMontserrat } from "@/app/fonts";
+import { AnalyticsWrapper } from "@/components/Analytics";
 import { HtmlLang } from "@/components/HtmlLang";
+import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { MAIN_SITE, SITE_URL } from "@/constants/site";
 import {
   buildCoursesItemListJsonLd,
@@ -14,10 +14,16 @@ import {
 import { routing } from "@/i18n/routing";
 import { absoluteUrl, pathnameWithLocale } from "@/lib/locale-path";
 
+import "../globals.css";
+
 type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 };
+
+export const dynamic = "force-static";
+export const dynamicParams = false;
+export const revalidate = 86400;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -29,11 +35,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
 
+  setRequestLocale(locale);
+
   const t = await getTranslations({ locale, namespace: "seo" });
   const titleDefault = t("defaultTitle");
   const description = t("defaultDescription");
   const ogImage = `${MAIN_SITE}/images/visit-card.png`;
   const canonicalPath = pathnameWithLocale("/", locale);
+  const ogLocale = locale === "pt" ? "pt_BR" : "en_US";
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -50,16 +59,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: {
         "pt-BR": pathnameWithLocale("/", "pt"),
         en: pathnameWithLocale("/", "en"),
+        "x-default": pathnameWithLocale("/", "pt"),
       },
     },
-    icons: {
-      icon: `${MAIN_SITE}/favicon.ico`,
-    },
+    icons: "/favicon.ico",
     openGraph: {
       type: "website",
       url: absoluteUrl("/", locale),
       siteName: t("webSiteName"),
-      locale: locale === "pt" ? "pt_BR" : "en_US",
+      locale: ogLocale,
+      alternateLocale: locale === "pt" ? ["en_US"] : ["pt_BR"],
       title: titleDefault,
       description,
       images: [
@@ -93,31 +102,34 @@ export default async function LocaleLayout({ children, params }: Props) {
   }
 
   setRequestLocale(locale);
-  const messages = await getMessages();
 
   const itemList = await buildCoursesItemListJsonLd(locale);
   const webSite = await buildWebSiteJsonLd(locale);
+  const lang = locale === "pt" ? "pt-BR" : "en";
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(webSite),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(itemList),
-        }}
-      />
-      <NextIntlClientProvider messages={messages}>
+    <html lang={lang} suppressHydrationWarning>
+      <body
+        className={`${fontMontserrat.variable} ${fontMontserrat.className} min-h-screen antialiased`}
+        suppressHydrationWarning
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(webSite),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(itemList),
+          }}
+        />
         <HtmlLang />
         {children}
-      </NextIntlClientProvider>
-      <Analytics mode="production" />
-      <SpeedInsights />
-    </>
+        <ScrollToTopButton />
+        <AnalyticsWrapper />
+      </body>
+    </html>
   );
 }

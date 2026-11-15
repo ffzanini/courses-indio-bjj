@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "courseHalfGuardTitle": "Half Guard",
+    "courseOpenGuardTitle": "Open Guard",
+    "courseDrillsTitle": "Sequences Drills",
+    "courseNogiTitle": "NOGI Finishes",
+    "courseGuardPassingTitle": "Guard Passing",
+    "courseHalfGuardDesc": "Master the half guard and turn that position into a powerful weapon.",
+    "courseOpenGuardDesc": "Master the open guard and turn that position into an offensive weapon.",
+    "courseDrillsDesc": "Improve your gas tank, mobility, body awareness, and speed of thought.",
+    "courseNogiDesc": "Master no-gi submissions and finish the fight from any position.",
+    "courseGuardPassingDesc": "Master guard passing and take full control of the fight.",
+    "courseEscapesTitle": "Escapes",
+    "courseEscapesDesc": "Escape the worst positions with technique, intelligence, and emotional control."
+  },
+  "buttons": {
+    "learnMore": "Learn more →"
+  },
+  "credibility": "3,000+ students across 15+ years of teaching",
+  "otherCourses": {
+    "title": "Other courses",
+    "subtitle": "Check out our other courses and find the one that's right for you."
+  }
+}

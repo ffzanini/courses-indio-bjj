@@ -1,0 +1,147 @@
+{
+  "hero": {
+    "title": "Learn to escape the worst positions in Jiu-Jitsu with technique, intelligence, and emotional control.",
+    "subtitle": "Turn your defense into a strategic weapon by mastering efficient escapes that stop your opponent from controlling, submitting, and wrecking your game.",
+    "cta": "CLAIM MY SPOT!",
+    "students": "Lifetime access",
+    "lifetime": "7-day guarantee",
+    "guarantee": "100% secure checkout",
+    "videoTitle": "Escapes course",
+    "videoDescription": "Turn your defense into a strategic weapon with efficient escapes that stop your opponent from controlling and submitting you."
+  },
+  "problems": {
+    "title": "Maybe this sounds like you:",
+    "items": [
+      "You get stuck in mount and do not know how to escape",
+      "You panic when they take your back",
+      "You waste energy trying to muscle your way out",
+      "You freeze against heavier opponents",
+      "You survive for a few seconds and still get submitted",
+      "You learn isolated defenses but never the right moment to use them"
+    ],
+    "key": "Whoever owns the escapes controls the fight, even from the worst positions.",
+    "description": "Efficient defense is what separates ordinary fighters from athletes who are hard to submit."
+  },
+  "method": {
+    "title": "In this course you learn a complete escape system built for real training.",
+    "items": [
+      "No random movements",
+      "No techniques that are impossible to apply",
+      "You learn logic, timing, and control"
+    ]
+  },
+  "benefits": {
+    "title": "What you will learn",
+    "subtitle": "A complete escape system built for real training.",
+    "items": [
+      {
+        "icon": "🧗",
+        "title": "Escapes from mount, back control, and extreme pressure positions."
+      },
+      {
+        "icon": "🧠",
+        "title": "How to stay calm and recover control under pressure."
+      },
+      {
+        "icon": "📐",
+        "title": "Space management, levers, and intelligent movement."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Technical defenses against triangle, armlock, and chokes."
+      },
+      {
+        "icon": "⚙️",
+        "title": "How to break your opponent's control without wasting energy."
+      },
+      {
+        "icon": "🔁",
+        "title": "Fluid recoveries that take you from defense back to attack."
+      },
+      {
+        "icon": "👁️",
+        "title": "Reading pressure, base, and how your opponent distributes weight."
+      },
+      {
+        "icon": "🎯",
+        "title": "How to become a fighter who is hard to control and hard to submit."
+      }
+    ]
+  },
+  "directBenefits": {
+    "title": "Direct benefits",
+    "items": [
+      {
+        "icon": "⚡",
+        "title": "Save energy during rolls."
+      },
+      {
+        "icon": "💪",
+        "title": "Feel more confident against any opponent."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Build a solid, intelligent defense."
+      },
+      {
+        "icon": "🧭",
+        "title": "Know exactly what to do in pressure situations."
+      },
+      {
+        "icon": "🔁",
+        "title": "Turn defense into a chance to recover and attack."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Special offer!",
+    "title": "Ready to stop freezing in bad positions?",
+    "subtitle": "Click now and learn the method that turns defense into control in Jiu-Jitsu.",
+    "priceTitle": "What is it worth to stop feeling lost in the worst positions of the fight?",
+    "lead": "Take a step forward on the mat and learn the method that turns survival into control.",
+    "from": "From",
+    "oldPrice": "R$ 197",
+    "bridge": "for only",
+    "price": "12x of R$ 9.30",
+    "installments": "or R$ 89.90 up front",
+    "includes": [
+      "Complete Escapes course",
+      "Straight-to-the-point content you can use in real training",
+      "A method with a clear, objective progression",
+      "Lifetime access"
+    ],
+    "button": "CLAIM MY SPOT!",
+    "secure": "100% secure purchase. You get access right after the payment is confirmed."
+  },
+  "guarantee": {
+    "title": "7-day satisfaction guarantee",
+    "subtitle": "Try the course for 7 days.",
+    "seal": "Guarantee",
+    "description": "If you are not satisfied, we refund 100% of your money. No paperwork.",
+    "noQuestions": "No paperwork. A full refund inside the guarantee window."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "stillDoubts": "Still have questions?",
+    "description": "Talk to the team about escapes and access to the course.",
+    "whatsapp": "Message us on WhatsApp",
+    "items": [
+      {
+        "question": "How long do I have access?",
+        "answer": "Access is lifetime."
+      },
+      {
+        "question": "How does the guarantee work?",
+        "answer": "Try the course for 7 days. If you are not satisfied, we refund 100% of your money. No paperwork."
+      },
+      {
+        "question": "When do I get access?",
+        "answer": "You receive access immediately after the payment is confirmed."
+      },
+      {
+        "question": "What is included?",
+        "answer": "The complete Escapes course, straight-to-the-point content, a clear progression, and lifetime access."
+      }
+    ]
+  }
+}

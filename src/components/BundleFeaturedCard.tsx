@@ -1,35 +1,28 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { bundleThemeKeys } from "@/data/courses";
-import { Link } from "@/i18n/navigation";
-import { cn } from "@/lib/utils";
+import { pathnameWithLocale } from "@/lib/locale-path";
 
-export function BundleFeaturedCard({
+export async function BundleFeaturedCard({
   bundleCheckoutHref,
   learnMoreHref,
 }: {
   bundleCheckoutHref: string | null;
   learnMoreHref: string;
 }) {
-  const t = useTranslations("bundle");
+  const t = await getTranslations("bundle");
+  const locale = await getLocale();
   const hasCheckout = Boolean(bundleCheckoutHref);
 
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45 }}
-      className="relative overflow-hidden rounded-3xl border border-primary-ja/50 bg-dark-theme text-white-theme shadow-xl"
-    >
+    <section className="rise-in-bundle relative overflow-hidden rounded-3xl border border-primary-ja/50 bg-dark-theme text-white-theme shadow-xl">
       <div
         className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-primary-ja/25 blur-3xl"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute -bottom-32 -left-16 h-72 w-72 rounded-full bg-guard-passing-theme/20 blur-3xl"
+        className="pointer-events-none absolute -bottom-32 -left-16 h-72 w-72 rounded-full bg-secondary/20 blur-3xl"
         aria-hidden
       />
 
@@ -61,11 +54,7 @@ export function BundleFeaturedCard({
         </div>
 
         <div className="flex flex-col gap-4">
-          <div
-            className={cn(
-              "rounded-2xl border border-white-theme/15 bg-white-theme/5 p-6 backdrop-blur-sm",
-            )}
-          >
+          <div className="rounded-2xl border border-white-theme/15 bg-white-theme/5 p-6 backdrop-blur-sm">
             <p className="text-sm font-medium text-white-theme/80">
               {t("promoLabel")}
             </p>
@@ -91,7 +80,7 @@ export function BundleFeaturedCard({
               </span>
             )}
             <Link
-              href={learnMoreHref}
+              href={pathnameWithLocale(learnMoreHref, locale)}
               className="flex items-center justify-center border-t border-white-theme/20 py-4 text-center text-base font-semibold text-white-theme transition-colors hover:bg-white-theme/10 sm:border-l sm:border-t-0"
             >
               {t("learnMore")}
@@ -99,6 +88,6 @@ export function BundleFeaturedCard({
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

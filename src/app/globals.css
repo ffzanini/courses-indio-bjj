@@ -10,15 +10,21 @@
   --color-card: var(--card);
 
   --color-open-guard-theme: #cc3333;
+  --color-open-guard-theme-light: #ff6d62;
   --color-open-guard-theme-dark: #8e0007;
   --color-half-guard-theme: #cc9933;
+  --color-half-guard-theme-light: #ffcf68;
   --color-half-guard-theme-dark: #916600;
   --color-drills-theme: #2563eb;
+  --color-drills-theme-light: #60a5fa;
   --color-nogi-theme: #d1ff00;
+  --color-nogi-theme-light: #e8ff66;
+  --color-nogi-theme-dark: #a8cc00;
   --color-guard-passing-theme: #0d9488;
+  --color-guard-passing-theme-light: #2dd4bf;
   --color-guard-passing-theme-dark: #0f766e;
-
   --color-primary-ja: #d1ff00;
+  --color-secondary: #dc1f31;
 }
 
 :root {
@@ -39,13 +45,115 @@ body {
   font-family: var(--font-sans);
 }
 
+.text-outline-shadow-black {
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rise-in-bundle {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rise-in {
+  animation: rise-in 0.35s ease both;
+}
+
+.rise-in-bundle {
+  animation: rise-in-bundle 0.45s ease both;
+}
+
+.fade-in {
+  animation: fade-in 0.6s ease both;
+}
+
+@keyframes guarantee-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.guarantee-float {
+  animation: guarantee-float 3s ease-in-out infinite;
+}
+
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise-in,
+  .rise-in-bundle,
+  .fade-in,
+  .guarantee-float,
+  .bf-marquee-track {
+    animation: none;
+  }
+}
+
+.bf-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.bf-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bf-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: bf-marquee 28s linear infinite;
+}
+
+@keyframes bf-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 *::-webkit-scrollbar {
-  width: 6px;
+  width: 0.01px;
   background-color: var(--background);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--foreground);
-  border-radius: 4px;
-  opacity: 0.3;
+  background-color: var(--background);
 }

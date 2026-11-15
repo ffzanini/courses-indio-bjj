@@ -1,9 +1,8 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { RiArrowRightLine } from "react-icons/ri";
 
 import { MAIN_SITE } from "@/constants/site";
+import { cn } from "@/lib/utils";
 
 const linkKeys = [
   "about",
@@ -21,49 +20,54 @@ const paths: Record<(typeof linkKeys)[number], string> = {
   contact: "/contact",
 };
 
-export function AcademyLinksSection() {
-  const t = useTranslations("academy");
+export async function AcademyLinksSection() {
+  const t = await getTranslations("academy");
 
   return (
     <section
-      className="border-t border-foreground/10 bg-linear-to-b from-foreground/3 to-background py-16 lg:py-24"
+      className="cv-auto border-t border-secondary bg-dark-theme py-16 lg:py-24"
       aria-labelledby="academy-cta-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2
           id="academy-cta-heading"
-          className="text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl"
+          className="bf-display text-center text-3xl font-normal tracking-tight sm:text-5xl"
         >
           {t("title")}
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-white/65">
           {t("subtitle")}
         </p>
 
-        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {linkKeys.map((key) => {
+        <ul className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-6">
+          {linkKeys.map((key, index) => {
             const href = `${MAIN_SITE}${paths[key]}`;
             return (
-              <li key={key}>
+              <li
+                key={key}
+                className={cn(
+                  "lg:col-span-2",
+                  index === 3 && "lg:col-start-2",
+                )}
+              >
                 <a
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex h-full flex-col rounded-2xl border border-foreground/12 border-l-4 border-l-guard-passing-theme bg-background p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-foreground/20 hover:shadow-md"
+                  className="group flex h-full items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:-translate-y-0.5 hover:border-secondary"
                 >
-                  <span className="text-lg font-semibold text-foreground transition-colors group-hover:text-guard-passing-theme-dark">
-                    {t(`links.${key}.label`)}
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-lg font-semibold text-white-theme">
+                      {t(`links.${key}.label`)}
+                    </span>
+                    <span className="mt-1 block text-sm text-white/60">
+                      {t(`links.${key}.description`)}
+                    </span>
                   </span>
-                  <span className="mt-1 flex-1 text-sm text-muted-foreground">
-                    {t(`links.${key}.description`)}
-                  </span>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-guard-passing-theme-dark underline-offset-4 group-hover:underline">
-                    {t("cta")}
-                    <RiArrowRightLine
-                      className="size-4 shrink-0 text-guard-passing-theme-dark transition-transform group-hover:translate-x-0.5"
-                      aria-hidden
-                    />
-                  </span>
+                  <RiArrowRightLine
+                    className="size-5 shrink-0 text-secondary transition-transform group-hover:translate-x-0.5"
+                    aria-hidden
+                  />
                 </a>
               </li>
             );
@@ -75,7 +79,7 @@ export function AcademyLinksSection() {
             href={MAIN_SITE}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full border border-foreground/20 bg-foreground/4 px-8 py-3 text-base font-semibold text-foreground shadow-sm transition-colors hover:border-guard-passing-theme hover:bg-guard-passing-theme hover:text-white"
+            className="inline-flex items-center justify-center rounded-full bg-primary-ja px-8 py-3 text-base font-bold text-dark-theme transition hover:brightness-110"
           >
             {t("mainSite")}
           </a>

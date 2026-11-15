@@ -1,15 +1,16 @@
 "use client";
 
 import { useEffect } from "react";
-import { useLocale } from "next-intl";
+import { usePathname } from "next/navigation";
 
-/** Sincroniza <html lang> com o locale ativo (root layout não conhece [locale]). */
+/** O root layout não re-renderiza na troca de idioma pelo cliente. */
 export function HtmlLang() {
-  const locale = useLocale();
+  const pathname = usePathname();
 
   useEffect(() => {
-    document.documentElement.lang = locale === "pt" ? "pt-BR" : "en";
-  }, [locale]);
+    const segment = pathname.split("/").filter(Boolean)[0];
+    document.documentElement.lang = segment === "en" ? "en" : "pt-BR";
+  }, [pathname]);
 
   return null;
 }
