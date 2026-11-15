@@ -8,6 +8,7 @@ export function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
   const pathname = usePathname();
   const label = pathname.startsWith("/en") ? "Back to top" : "Voltar ao topo";
+  const abovePurchaseBar = pathname.includes("/blackfriday");
 
   useEffect(() => {
     const onScroll = () => setIsVisible(window.scrollY > 100);
@@ -23,7 +24,7 @@ export function ScrollToTopButton() {
       type="button"
       aria-label={label}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed right-4 bottom-12 z-50 cursor-pointer rounded-full bg-primary-ja p-2 opacity-80 transition-transform hover:scale-110"
+      className={`fixed right-4 z-50 cursor-pointer rounded-full bg-primary-ja p-2 opacity-80 transition-transform hover:scale-110 ${abovePurchaseBar ? "bottom-28 md:bottom-12" : "bottom-12"}`}
     >
       <RiArrowUpLine size={24} className="text-dark-theme" />
     </button>

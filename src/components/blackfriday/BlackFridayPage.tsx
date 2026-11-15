@@ -234,12 +234,12 @@ export function BlackFridayPage({
       </Section>
 
       <Section>
-        <h2 className="bf-display text-2xl leading-tight font-normal whitespace-normal md:text-[clamp(0.95rem,2.55vw,3rem)] md:whitespace-nowrap">
+        <h2 className="bf-display text-4xl leading-tight font-normal whitespace-normal md:text-[clamp(0.95rem,2.55vw,3rem)] md:whitespace-nowrap">
           <Emphasis text={blackfridayProof.stat} phrase="+ de 15 anos" />
         </h2>
         {testimonials.length > 0 ? (
           <div className="mt-12">
-            <h2 className="bf-display text-center text-3xl font-normal sm:text-4xl">
+            <h2 className="bf-display text-center text-2xl font-normal md:text-4xl">
               <Emphasis
                 text={blackfridayProof.testimonialsTitle}
                 phrase="nossos cursos"
