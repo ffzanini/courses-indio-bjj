@@ -5,6 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { BlackFridayCta } from "@/components/blackfriday/BlackFridayCta";
+import {
+  HERO_CTA_ID,
+  StickyPurchaseBar,
+} from "@/components/blackfriday/StickyPurchaseBar";
 import { BlackFridayTracking } from "@/components/blackfriday/BlackFridayTracking";
 import { TestimonialCarousel } from "@/components/blackfriday/TestimonialCarousel";
 import { FaqSection } from "@/components/courses/FaqSection";
@@ -191,11 +195,13 @@ export function BlackFridayPage({
             <p className="mt-[clamp(0.6rem,1.2vh,1.5rem)] max-w-xl text-[clamp(0.95rem,1.8vh,1.25rem)] leading-snug text-white/75">
               {blackfridayHero.subtitle}
             </p>
-            <BlackFridayCta
-              href="#checkout"
-              button="hero"
-              className="mt-[clamp(0.8rem,1.6vh,2rem)] w-full lg:w-fit"
-            />
+            <div id={HERO_CTA_ID}>
+              <BlackFridayCta
+                href="#checkout"
+                button="hero"
+                className="mt-[clamp(0.8rem,1.6vh,2rem)] w-full lg:w-fit"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -610,9 +616,7 @@ export function BlackFridayPage({
         </p>
       </footer>
 
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-dark-theme/95 p-3 backdrop-blur-sm md:hidden">
-        <BlackFridayCta href="#checkout" button="sticky" className="w-full" />
-      </div>
+      <StickyPurchaseBar />
     </main>
   );
 }
