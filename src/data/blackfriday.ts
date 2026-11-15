@@ -6,8 +6,6 @@ const courseImage = Object.fromEntries(
 
 export const blackfridayCtaLabel = "Quero garantir a minha vaga";
 
-export const blackfridayCheckoutSoon = "Link de compra em breve";
-
 export const blackfridayLogoPath = "/images/logos/logo.png";
 
 export const blackfridayHero = {
@@ -122,7 +120,7 @@ export const blackfridayBonusIntro =
   "Estratégias e técnicas sem a alimentação correta não servem de nada, por isso separei um bônus especial:";
 
 export const blackfridayGifts = {
-  title: "Até 19/11, quem entrar leva estes presentes.",
+  title: "Até 25/11, quem entrar leva estes presentes.",
 };
 
 export const blackfridayBonuses = [
@@ -143,7 +141,7 @@ export const blackfridayMentorship = {
   eyebrow: "Condição exclusiva da Black",
   title: "60% de desconto na mentoria individual",
   description:
-    "Encontros on-line para analisar o seu jogo e sair com ajustes que você aplica no treino.",
+    "Adquirindo a oferta da Black, você garante 60% de desconto para a mentoria individual, com duração de 6 meses.",
   fullPrice: "R$ 2.497,00",
   priceLabel: "Já com 60% de desconto",
   price: "R$ 997,00",
@@ -185,7 +183,7 @@ export const blackfridayOffer = {
     "6 cursos completos de Jiu-Jitsu, vitalícios",
     "1 seminário de guarda fechada",
     "1 curso de regras da IBJJ",
-    "60% de desconto na minha consultoria",
+    "60% de desconto na mentoria individual de 6 meses",
     "Nunca mais renovar — acesso vitalício e sem mensalidade",
     "Acesso imediato no seu e-mail",
   ],
@@ -233,12 +231,12 @@ export const blackfridayFaq = [
   {
     question: "Como funciona a garantia? Tem risco?",
     answer:
-      "O risco é zero. Você tem 7 dias de garantia incondicional. Se por qualquer motivo você entrar na plataforma, assistir às aulas e achar que o conteúdo não é para você ou que não agregou ao seu jogo, basta solicitar o reembolso com um clique dentro da própria plataforma e 100% do seu dinheiro será devolvido, sem burocracia nem perguntas.",
+      "O risco é zero. Você tem 7 dias para entrar, assistir às aulas e pedir o reembolso com um clique na plataforma. 100% do valor volta, sem burocracia.",
   },
   {
     question: "Como recebo os dados de acesso após a compra?",
     answer:
-      "Imediatamente após a confirmação do pagamento (em pagamentos via Pix ou cartão, o acesso é instantâneo), você receberá um e-mail automático da plataforma de pagamento e o link direto para a área de membros.",
+      "Imediatamente após a confirmação do pagamento, no Pix ou no cartão, chega um e-mail com o link da área de membros.",
   },
 ];
 

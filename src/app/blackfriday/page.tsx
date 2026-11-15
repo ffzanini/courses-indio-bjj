@@ -5,7 +5,7 @@ import { MAIN_SITE, SITE_URL, blackfridayCheckoutUrl } from "@/constants/site";
 
 const title = "Ultra Black Friday | Cursos online JA Índio";
 const description =
-  "Todos os cursos de Jiu-Jitsu do Índio, com acesso vitalício. A condição imperdível vai até 19/11.";
+  "Todos os cursos de Jiu-Jitsu do Índio, com acesso vitalício. A condição imperdível vai até 25/11.";
 const canonical = "/blackfriday";
 const ogImage = `${MAIN_SITE}/images/visit-card.png`;
 

@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const INTERVAL_MS = 1800;
-const VISIBLE = 3;
+const DESKTOP_VISIBLE = 3;
 
 export function TestimonialCarousel({
   items,
@@ -16,10 +16,23 @@ export function TestimonialCarousel({
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const [animate, setAnimate] = useState(true);
-  const slides = [...items, ...items.slice(0, VISIBLE)];
+  const [visible, setVisible] = useState(DESKTOP_VISIBLE);
+  const slides = [...items, ...items.slice(0, visible)];
 
   useEffect(() => {
-    if (paused || items.length <= VISIBLE) return;
+    const query = window.matchMedia("(max-width: 767px)");
+    const update = () => {
+      setVisible(query.matches ? 1 : DESKTOP_VISIBLE);
+      setAnimate(false);
+      setIndex(0);
+    };
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+
+  useEffect(() => {
+    if (paused || items.length <= visible) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const id = window.setInterval(() => {
@@ -28,7 +41,7 @@ export function TestimonialCarousel({
     }, INTERVAL_MS);
 
     return () => window.clearInterval(id);
-  }, [paused, items.length]);
+  }, [paused, items.length, visible]);
 
   useEffect(() => {
     if (animate) return;
@@ -57,7 +70,7 @@ export function TestimonialCarousel({
             animate ? "transition-transform duration-450" : "transition-none",
           )}
           style={{
-            width: `${(slides.length / VISIBLE) * 100}%`,
+            width: `${(slides.length / visible) * 100}%`,
             transform: `translateX(-${(index * 100) / slides.length}%)`,
           }}
           onTransitionEnd={settle}
@@ -69,14 +82,14 @@ export function TestimonialCarousel({
               style={{ width: `${100 / slides.length}%` }}
               aria-hidden={slideIndex >= items.length}
             >
-              <div className="relative aspect-[5/4] overflow-hidden rounded-3xl border border-white-theme/15 bg-white-theme">
+              <div className="relative aspect-[3/4] overflow-hidden rounded-3xl border border-white-theme/15 bg-white-theme md:aspect-[5/4]">
                 <Image
                   src={item.src}
                   alt={slideIndex >= items.length ? "" : item.alt}
                   fill
                   quality={75}
                   className="object-contain"
-                  sizes="33vw"
+                  sizes="(max-width: 767px) 100vw, 33vw"
                 />
               </div>
             </div>

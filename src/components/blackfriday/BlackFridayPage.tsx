@@ -13,7 +13,6 @@ import {
   blackfridayAudience,
   blackfridayBonusIntro,
   blackfridayBonuses,
-  blackfridayCheckoutSoon,
   blackfridayCourses,
   blackfridayCoursesClose,
   blackfridayCtaLabel,
@@ -41,7 +40,9 @@ function Emphasis({ text, phrase }: { text: string; phrase: string }) {
   return (
     <>
       {text.slice(0, index)}
-      <em className={`${ACCENT} italic`}>{text.slice(index, index + phrase.length)}</em>
+      <em className={`${ACCENT} italic`}>
+        {text.slice(index, index + phrase.length)}
+      </em>
       {text.slice(index + phrase.length)}
     </>
   );
@@ -76,7 +77,10 @@ function Section({
   className?: string;
 }) {
   return (
-    <section id={id} className={cn("w-full border-t border-primary-ja", className)}>
+    <section
+      id={id}
+      className={cn("w-full border-t border-primary-ja", className)}
+    >
       <div className="mx-auto w-[min(76rem,94vw)] py-20">{children}</div>
     </section>
   );
@@ -212,10 +216,7 @@ export function BlackFridayPage({
 
       <Section>
         <h2 className="bf-display text-4xl leading-tight font-normal sm:text-5xl">
-          <Emphasis
-            text={blackfridayAudience.title}
-            phrase="para você que"
-          />
+          <Emphasis text={blackfridayAudience.title} phrase="para você que" />
         </h2>
         <ul className="mt-10 space-y-5 text-lg leading-relaxed text-white/85">
           {blackfridayAudience.items.map((item) => (
@@ -233,7 +234,7 @@ export function BlackFridayPage({
       </Section>
 
       <Section>
-        <h2 className="bf-display text-[clamp(0.95rem,2.55vw,3rem)] leading-tight font-normal whitespace-nowrap">
+        <h2 className="bf-display text-2xl leading-tight font-normal whitespace-normal md:text-[clamp(0.95rem,2.55vw,3rem)] md:whitespace-nowrap">
           <Emphasis text={blackfridayProof.stat} phrase="+ de 15 anos" />
         </h2>
         {testimonials.length > 0 ? (
@@ -287,7 +288,9 @@ export function BlackFridayPage({
                   {course.promise}
                 </p>
                 <div className="mt-5 border-t border-white/10 pt-4">
-                  <p className={`text-[11px] font-semibold tracking-[0.2em] uppercase ${ACCENT}`}>
+                  <p
+                    className={`text-[11px] font-semibold tracking-[0.2em] uppercase ${ACCENT}`}
+                  >
                     {blackfridayCourses.priceLabel}
                   </p>
                   <p className={`bf-display text-3xl font-normal ${ACCENT}`}>
@@ -316,7 +319,10 @@ export function BlackFridayPage({
           />
         </div>
         <h2 className="bf-display mt-16 text-4xl font-normal sm:text-5xl">
-          <Emphasis text={blackfridayCoursesClose.bridge} phrase="não é só isso" />
+          <Emphasis
+            text={blackfridayCoursesClose.bridge}
+            phrase="não é só isso"
+          />
         </h2>
       </Section>
 
@@ -358,7 +364,9 @@ export function BlackFridayPage({
             <p className="text-lg text-white/40 line-through">
               {blackfridayMentorship.fullPrice}
             </p>
-            <p className={`bf-display mt-1 text-5xl font-normal tracking-tight sm:text-6xl ${ACCENT}`}>
+            <p
+              className={`bf-display mt-1 text-5xl font-normal tracking-tight sm:text-6xl ${ACCENT}`}
+            >
               {blackfridayMentorship.price}
             </p>
             <p className="mt-2 text-[11px] font-semibold tracking-[0.16em] text-primary-ja uppercase">
@@ -370,7 +378,7 @@ export function BlackFridayPage({
 
       <Section>
         <h2 className="bf-display text-4xl leading-tight font-normal sm:text-5xl">
-          <Emphasis text={blackfridayGifts.title} phrase="19/11" />
+          <Emphasis text={blackfridayGifts.title} phrase="25/11" />
         </h2>
         <ul className="mt-8 grid items-stretch gap-4 md:grid-cols-2">
           {blackfridayExtras.items.map((item) => (
@@ -396,7 +404,9 @@ export function BlackFridayPage({
               className="flex items-baseline justify-between gap-4 py-5"
             >
               <dt className="text-white/85">{item.label}</dt>
-              <dd className={`bf-display shrink-0 text-2xl font-normal ${ACCENT}`}>
+              <dd
+                className={`bf-display shrink-0 text-2xl font-normal ${ACCENT}`}
+              >
                 {item.price}
               </dd>
             </div>
@@ -405,7 +415,9 @@ export function BlackFridayPage({
             <dt className="text-lg font-semibold text-white">
               {blackfridayStack.totalLabel}
             </dt>
-            <dd className={`bf-display shrink-0 text-3xl font-normal ${ACCENT}`}>
+            <dd
+              className={`bf-display shrink-0 text-3xl font-normal ${ACCENT}`}
+            >
               {blackfridayStack.total}
             </dd>
           </div>
@@ -469,7 +481,9 @@ export function BlackFridayPage({
                 >
                   {blackfridayOffer.cashPrice}
                 </p>
-                <p className="mt-3 text-white/70">{blackfridayOffer.cashNote}</p>
+                <p className="mt-3 text-white/70">
+                  {blackfridayOffer.cashNote}
+                </p>
                 <p className="mt-1 text-lg text-white/80">
                   {blackfridayOffer.installments}
                 </p>
@@ -483,11 +497,6 @@ export function BlackFridayPage({
                   solid
                   className="w-full"
                 />
-                {checkoutHref ? null : (
-                  <p className="mt-3 text-center text-sm text-white/40">
-                    {blackfridayCheckoutSoon}
-                  </p>
-                )}
               </div>
             </div>
           </div>
@@ -520,37 +529,34 @@ export function BlackFridayPage({
       </Section>
 
       <Section>
-        <div className="rounded-[2rem] border border-white/10 px-6 py-12 text-center sm:px-14 sm:py-16">
-          <h2 className="bf-display text-4xl leading-tight font-normal sm:text-6xl">
-            {blackfridayAccess.lead}{" "}
-            <em className={`${ACCENT} italic`}>{blackfridayAccess.emphasis}</em>
-          </h2>
-          <ol className="mt-10 space-y-5 text-left">
-            {blackfridayAccess.steps.map((step, index) => (
-              <li key={step.text} className="flex items-center gap-4">
-                <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary-ja text-sm font-bold text-dark-theme">
-                  {index + 1}
-                </span>
-                <p className="text-base leading-snug text-white/85 sm:text-lg">
-                  <StepText text={step.text} highlight={step.highlight} />
-                </p>
-              </li>
-            ))}
-          </ol>
-          <BlackFridayCta
-            href="#checkout"
-            button="access"
-            className="mt-10"
-          />
-        </div>
-      </Section>
-
-      <Section>
-        <h2 className="bf-display text-4xl leading-tight font-normal sm:text-5xl">
-          Perguntas <em className={`${ACCENT} italic`}>frequentes.</em>
-        </h2>
-        <div className="mt-10">
-          <FaqSection items={blackfridayFaq} tone="dark" />
+        <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
+          <div className="rounded-3xl border border-white/10 px-6 py-8 sm:px-8">
+            <h2 className="bf-display text-4xl leading-tight font-normal sm:text-5xl">
+              {blackfridayAccess.lead}{" "}
+              <em className={`${ACCENT} italic`}>{blackfridayAccess.emphasis}</em>
+            </h2>
+            <ol className="mt-8 space-y-4">
+              {blackfridayAccess.steps.map((step, index) => (
+                <li key={step.text} className="flex items-center gap-4">
+                  <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary-ja text-sm font-bold text-dark-theme">
+                    {index + 1}
+                  </span>
+                  <p className="text-base leading-snug text-white/85">
+                    <StepText text={step.text} highlight={step.highlight} />
+                  </p>
+                </li>
+              ))}
+            </ol>
+            <BlackFridayCta href="#checkout" button="access" className="mt-8" />
+          </div>
+          <div>
+            <h2 className="bf-display text-4xl leading-tight font-normal sm:text-5xl">
+              Perguntas <em className={`${ACCENT} italic`}>frequentes.</em>
+            </h2>
+            <div className="mt-8">
+              <FaqSection items={blackfridayFaq} tone="dark" />
+            </div>
+          </div>
         </div>
       </Section>
 
