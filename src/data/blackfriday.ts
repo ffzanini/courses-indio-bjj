@@ -155,7 +155,7 @@ export const blackfridayStack = {
 };
 
 export const blackfridayExtras = {
-  title: "O valor justo para a Ultra Black seria de no mínimo R$ 497,00.",
+  title: "O valor justo para a Ultra Black seria de no mínimo R$ 997,00.",
   subtitle:
     "Mas quem entra hoje, não paga isso — e não paga de novo nunca mais.",
   items: [
@@ -191,6 +191,8 @@ export const blackfridayOffer = {
   cashNote: "à vista",
   installments: "Ou em até 12x de R$ 20,37.",
   acquireLabel: "Adquirir agora",
+  secure:
+    "Compra 100% segura! Receba seu acesso imediatamente após a confirmação do pagamento.",
 };
 
 export const blackfridayGuarantee =

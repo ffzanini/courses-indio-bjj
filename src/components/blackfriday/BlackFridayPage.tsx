@@ -438,18 +438,18 @@ export function BlackFridayPage({
         <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-dark-theme">
           <div className="border-b border-white/10 px-6 py-10 text-center sm:px-12">
             <h2 className="bf-display text-3xl leading-tight font-normal sm:text-5xl">
-              <Emphasis text={blackfridayExtras.title} phrase="R$ 497,00" />
+              <Emphasis text={blackfridayExtras.title} phrase="R$ 997,00" />
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-white/60">
               {blackfridayExtras.subtitle}
             </p>
           </div>
           <div className="grid items-stretch lg:grid-cols-[1.15fr_0.85fr]">
-            <div className="flex h-full flex-col p-6 sm:p-10">
-              <h3 className="bf-display text-3xl font-normal">
+            <div className="flex h-full flex-col items-center justify-center p-6 sm:p-10">
+              <h3 className="bf-display text-center text-3xl font-normal">
                 {blackfridayOffer.title}
               </h3>
-              <ul className="mt-6 flex flex-1 flex-col justify-between gap-4">
+              <ul className="mt-5 flex w-fit max-w-full flex-col gap-2 text-left">
                 {blackfridayOffer.items.map((item) => (
                   <li key={item} className="flex gap-3 text-white/90">
                     <span
@@ -508,6 +508,18 @@ export function BlackFridayPage({
                   solid
                   className="w-full"
                 />
+                <div className="mt-6 border-t border-white/10 pt-5 text-center">
+                  <img
+                    src="/images/payments/kiwify-bandeiras.svg"
+                    alt="Kiwify, Mastercard, Visa, boleto e PayPal"
+                    width={422}
+                    height={35}
+                    className="mx-auto h-7 w-auto max-w-full brightness-0 invert opacity-70"
+                  />
+                  <p className="mt-3 text-xs leading-relaxed text-white/55">
+                    {blackfridayOffer.secure}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
