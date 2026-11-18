@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-import { FacebookPixel } from "@/components/courses/FacebookPixel";
+import { FacebookPixel } from "@/components/blackfriday/FacebookPixel";
 import { trackEvent } from "@/libs/facebook-pixel";
 
 export function BlackFridayTracking() {

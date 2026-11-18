@@ -120,7 +120,8 @@ export const blackfridayBonusIntro =
   "Estratégias e técnicas sem a alimentação correta não servem de nada, por isso separei um bônus especial:";
 
 export const blackfridayGifts = {
-  title: "Até 25/11, quem entrar leva estes presentes.",
+  title:
+    "Quem comprar até às 23h:59min do dia 18/11, leva estes presentes:",
 };
 
 export const blackfridayBonuses = [
@@ -128,12 +129,6 @@ export const blackfridayBonuses = [
     name: "Seminário de Guarda Fechada",
     description: "Tudo o que você precisa saber para dominar a posição.",
     price: "R$ 197,00",
-  },
-  {
-    name: "Destrinchando o regulamento de regras da IBJJ",
-    description:
-      "Mais de 3 horas com conteúdo prático para você aplicar no seu jogo.",
-    price: "R$ 497,00",
   },
 ];
 
@@ -151,13 +146,12 @@ export const blackfridayStack = {
   title: "Se você comprasse cada coisa separada…",
   items: [
     { label: "6 cursos completos vitalícios", price: "R$ 534,00" },
-    { label: "1 mentoria com o Índio", price: "R$ 2.497,00" },
-    { label: "1 curso de regras da IBJJ", price: "R$ 497,00" },
+    { label: "1 encontro online em grupo com o Índio", price: "R$ 497,00" },
     { label: "1 seminário gravado", price: "R$ 197,00" },
     { label: "1 kimono oficial JA Jiu Jitsu", price: "R$ 549,90" },
   ],
   totalLabel: "Valor real",
-  total: "R$ 4.274,90",
+  total: "R$ 1.777,90",
 };
 
 export const blackfridayExtras = {
@@ -172,6 +166,7 @@ export const blackfridayExtras = {
     },
     {
       name: "Sorteio de um kimono oficial",
+      note: "(Entre quem comprou até às 23h:59min do dia 18/11)",
       description: "Kimono oficial da JA Jiu Jitsu Índio.",
     },
   ],
@@ -182,14 +177,13 @@ export const blackfridayOffer = {
   items: [
     "6 cursos completos de Jiu-Jitsu, vitalícios",
     "1 seminário de guarda fechada",
-    "1 curso de regras da IBJJ",
     "60% de desconto na mentoria individual de 6 meses",
     "Nunca mais renovar — acesso vitalício e sem mensalidade",
     "Acesso imediato no seu e-mail",
   ],
   asideLabel: "E do outro lado:",
   separatedLabel: "Se comprasse tudo separado",
-  separatedPrice: "R$ 4.274,90",
+  separatedPrice: "R$ 1.777,90",
   fairLabel: "Valor justo da Black",
   fairPrice: "R$ 997,00",
   todayLabel: "Você entra hoje por apenas:",
@@ -244,8 +238,8 @@ export const blackfridaySupport = {
   title: "Números oficiais",
   note: "Ficou alguma dúvida sobre a oferta, o pagamento ou o acesso? Fala com a gente por um desses números.",
   contacts: [
-    { name: "Índio", phone: "" },
-    { name: "Samuel", phone: "" },
-    { name: "Suporte", phone: "" },
+    { name: 'Fabiano "Índio"', phone: "53 98137-2378" },
+    { name: "Samuel", phone: "53 98424-7032" },
+    { name: "Suporte Índio", phone: "53 99175-4162" },
   ],
 };

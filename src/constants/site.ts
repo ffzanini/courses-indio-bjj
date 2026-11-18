@@ -9,7 +9,9 @@ export function bundleCheckoutUrl(): string | null {
   return u && u.trim() !== "" ? u.trim() : null;
 }
 
-export function blackfridayCheckoutUrl(): string | null {
+export function blackfridayCheckoutUrl(): string {
   const u = process.env.NEXT_PUBLIC_KIWIFY_BLACKFRIDAY_URL;
-  return u && u.trim() !== "" ? u.trim() : null;
+  return u && u.trim() !== ""
+    ? u.trim()
+    : "https://pay.kiwify.com.br/4STxkAR";
 }

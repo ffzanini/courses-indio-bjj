@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { RiArrowUpLine } from "react-icons/ri";
 
-import { scrolledPastHeroCta } from "@/components/blackfriday/StickyPurchaseBar";
+import { stickyPurchaseVisible } from "@/components/blackfriday/StickyPurchaseBar";
 
 export function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,7 +16,7 @@ export function ScrollToTopButton() {
   useEffect(() => {
     const onScroll = () => {
       setIsVisible(window.scrollY > 100);
-      setAbovePurchaseBar(onBlackFriday && scrolledPastHeroCta());
+      setAbovePurchaseBar(onBlackFriday && stickyPurchaseVisible());
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });

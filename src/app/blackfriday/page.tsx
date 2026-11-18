@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { BlackFridayPage } from "@/components/blackfriday/BlackFridayPage";
 import { MAIN_SITE, SITE_URL, blackfridayCheckoutUrl } from "@/constants/site";
 
-const title = "Ultra Black Friday | Cursos online JA Índio";
+const title = "Ultra Black Friday | Cursos online JA Índio Jiu Jitsu";
 const description =
   "Todos os cursos de Jiu-Jitsu do Índio, com acesso vitalício. A condição imperdível vai até 25/11.";
 const canonical = "/blackfriday";
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: canonical,
-    siteName: "Cursos online JA Índio",
+    siteName: "Cursos online JA Índio Jiu Jitsu",
     locale: "pt_BR",
     title,
     description,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         url: ogImage,
         width: 1120,
         height: 630,
-        alt: "Ultra Black Friday JA Índio",
+        alt: "Ultra Black Friday JA Índio Jiu Jitsu",
       },
     ],
   },

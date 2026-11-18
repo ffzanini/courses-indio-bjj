@@ -12,6 +12,7 @@ export function proxy(request: NextRequest) {
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/_vercel") ||
+    pathname.startsWith("/api") ||
     pathname.includes(".")
   ) {
     return NextResponse.next();
@@ -49,6 +50,6 @@ export const config = {
   matcher: [
     "/",
     "/(pt|en)/:path*",
-    "/((?!_next|_vercel|blackfriday|.*\\..*).*)",
+    "/((?!_next|_vercel|blackfriday|api|.*\\..*).*)",
   ],
 };

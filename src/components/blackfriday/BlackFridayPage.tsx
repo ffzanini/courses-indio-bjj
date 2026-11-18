@@ -5,10 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { BlackFridayCta } from "@/components/blackfriday/BlackFridayCta";
-import {
-  HERO_CTA_ID,
-  StickyPurchaseBar,
-} from "@/components/blackfriday/StickyPurchaseBar";
+import { StickyPurchaseBar } from "@/components/blackfriday/StickyPurchaseBar";
 import { BlackFridayTracking } from "@/components/blackfriday/BlackFridayTracking";
 import { TestimonialCarousel } from "@/components/blackfriday/TestimonialCarousel";
 import { FaqSection } from "@/components/courses/FaqSection";
@@ -93,12 +90,14 @@ function Section({
 function OfferCard({
   eyebrow,
   name,
+  note,
   description,
   price,
   highlighted = false,
 }: {
   eyebrow: string;
   name: string;
+  note?: string;
   description: string;
   price?: string;
   highlighted?: boolean;
@@ -129,6 +128,11 @@ function OfferCard({
         )}
       >
         {name}
+        {note ? (
+          <span className="mt-2 block font-sans text-sm leading-snug font-normal text-white/70">
+            {note}
+          </span>
+        ) : null}
       </h3>
       <p className="mt-3 min-h-24 flex-1 text-sm leading-relaxed text-white-theme/80">
         {description}
@@ -195,13 +199,12 @@ export function BlackFridayPage({
             <p className="mt-[clamp(0.6rem,1.2vh,1.5rem)] max-w-xl text-[clamp(0.95rem,1.8vh,1.25rem)] leading-snug text-white/75">
               {blackfridayHero.subtitle}
             </p>
-            <div id={HERO_CTA_ID}>
-              <BlackFridayCta
-                href="#checkout"
-                button="hero"
-                className="mt-[clamp(0.8rem,1.6vh,2rem)] w-full lg:w-fit"
-              />
-            </div>
+            <BlackFridayCta
+              href="#checkout"
+              button="hero"
+              marker="inline"
+              className="mt-[clamp(0.8rem,1.6vh,2rem)] w-full lg:w-fit"
+            />
           </div>
         </div>
       </section>
@@ -320,6 +323,7 @@ export function BlackFridayPage({
           <BlackFridayCta
             href="#checkout"
             button="courses"
+            marker="inline"
             label={`${blackfridayCtaLabel} ↓`}
             className="mt-6 rounded-lg"
           />
@@ -336,23 +340,22 @@ export function BlackFridayPage({
         <p className="text-lg leading-relaxed text-white/75">
           {blackfridayBonusIntro}
         </p>
-        <ul className="mt-8 grid items-stretch gap-4 md:grid-cols-2">
-          <li className="h-full">
-            <OfferCard
-              eyebrow="Bônus"
-              name={blackfridayBonuses[0].name}
-              description={blackfridayBonuses[0].description}
-              price={blackfridayBonuses[0].price}
-            />
-          </li>
-          <li className="h-full">
-            <OfferCard
-              eyebrow="Bônus"
-              name={blackfridayBonuses[1].name}
-              description={blackfridayBonuses[1].description}
-              price={blackfridayBonuses[1].price}
-            />
-          </li>
+        <ul
+          className={cn(
+            "mt-8 grid items-stretch gap-4",
+            blackfridayBonuses.length > 1 && "md:grid-cols-2",
+          )}
+        >
+          {blackfridayBonuses.map((bonus) => (
+            <li key={bonus.name} className="h-full">
+              <OfferCard
+                eyebrow="Bônus"
+                name={bonus.name}
+                description={bonus.description}
+                price={bonus.price}
+              />
+            </li>
+          ))}
         </ul>
         <article className="mt-4 grid items-center gap-8 rounded-3xl border border-primary-ja/50 bg-[#10160c] px-6 py-8 sm:px-10 sm:py-10 lg:grid-cols-[minmax(0,1.4fr)_auto] lg:gap-16">
           <div>
@@ -384,7 +387,7 @@ export function BlackFridayPage({
 
       <Section>
         <h2 className="bf-display text-4xl leading-tight font-normal sm:text-5xl">
-          <Emphasis text={blackfridayGifts.title} phrase="25/11" />
+          <Emphasis text={blackfridayGifts.title} phrase="18/11" />
         </h2>
         <ul className="mt-8 grid items-stretch gap-4 md:grid-cols-2">
           {blackfridayExtras.items.map((item) => (
@@ -392,6 +395,7 @@ export function BlackFridayPage({
               <OfferCard
                 eyebrow="Presente"
                 name={item.name}
+                note={"note" in item ? item.note : undefined}
                 description={item.description}
               />
             </li>
@@ -500,6 +504,7 @@ export function BlackFridayPage({
                   label={blackfridayOffer.acquireLabel}
                   size="large"
                   button="checkout"
+                  marker="acquire"
                   solid
                   className="w-full"
                 />
@@ -553,7 +558,12 @@ export function BlackFridayPage({
                 </li>
               ))}
             </ol>
-            <BlackFridayCta href="#checkout" button="access" className="mt-8" />
+            <BlackFridayCta
+              href="#checkout"
+              button="access"
+              marker="inline"
+              className="mt-8"
+            />
           </div>
           <div>
             <h2 className="bf-display text-4xl leading-tight font-normal sm:text-5xl">
@@ -576,7 +586,9 @@ export function BlackFridayPage({
         <ul className="mt-10 grid gap-8 sm:grid-cols-3">
           {supportContacts.map((contact) => {
             const digits = contact.phone.replace(/\D/g, "");
-            const href = digits ? `https://wa.me/${digits}` : undefined;
+            const href = digits
+              ? `https://wa.me/${digits.startsWith("55") ? digits : `55${digits}`}`
+              : undefined;
             return (
               <li key={contact.name}>
                 <p className="text-sm font-bold tracking-wide text-white/50 uppercase">

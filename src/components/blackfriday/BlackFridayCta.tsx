@@ -1,8 +1,12 @@
 "use client";
 
+import type { MouseEvent } from "react";
+
 import { blackfridayCtaLabel } from "@/data/blackfriday";
 import { trackEvent } from "@/libs/facebook-pixel";
 import { cn } from "@/lib/utils";
+
+export const BF_ACQUIRE_ID = "bf-acquire";
 
 export function BlackFridayCta({
   href,
@@ -11,6 +15,8 @@ export function BlackFridayCta({
   className,
   button = "blackfriday_cta",
   solid = false,
+  marker,
+  onClick,
 }: {
   href: string | null;
   label?: string;
@@ -18,6 +24,8 @@ export function BlackFridayCta({
   className?: string;
   button?: string;
   solid?: boolean;
+  marker?: "inline" | "acquire";
+  onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 }) {
   const classes = cn(
     "inline-flex items-center justify-center rounded-full text-center font-bold tracking-wide uppercase transition",
@@ -31,10 +39,16 @@ export function BlackFridayCta({
     !href && "cursor-not-allowed",
     className,
   );
+  const markerProps =
+    marker === "acquire"
+      ? { id: BF_ACQUIRE_ID, "data-bf-inline-cta": "" }
+      : marker === "inline"
+        ? { "data-bf-inline-cta": "" }
+        : {};
 
   if (!href) {
     return (
-      <span className={classes} aria-disabled="true">
+      <span className={classes} aria-disabled="true" {...markerProps}>
         {label}
       </span>
     );
@@ -44,9 +58,11 @@ export function BlackFridayCta({
     <a
       href={href}
       className={classes}
-      onClick={() =>
-        trackEvent("ButtonClick", { page: "blackfriday", button })
-      }
+      {...markerProps}
+      onClick={(event) => {
+        trackEvent("ButtonClick", { page: "blackfriday", button });
+        onClick?.(event);
+      }}
     >
       {label}
     </a>
