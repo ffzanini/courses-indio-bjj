@@ -1,7 +1,7 @@
 import { listedCourses } from "@/data/courses";
 
 const courseImage = Object.fromEntries(
-  listedCourses.map((course) => [course.id, course.imageUrl]),
+  listedCourses.map((course) => [course.id, course.cardImageUrl]),
 ) as Record<string, string | null>;
 
 export const blackfridayCtaLabel = "Quero garantir a minha vaga";
@@ -105,7 +105,7 @@ export const blackfridayCourses = {
       id: "escapes",
       name: "Curso de saídas e escapadas",
       promise: "Saiba como nunca mais ser finalizado pelos seus adversários",
-      imageUrl: "/images/courses/saidas-escapadas.webp",
+      imageUrl: courseImage.escapes ?? null,
     },
   ],
 };
@@ -118,11 +118,6 @@ export const blackfridayCoursesClose = {
 
 export const blackfridayBonusIntro =
   "Estratégias e técnicas sem a alimentação correta não servem de nada, por isso separei um bônus especial:";
-
-export const blackfridayGifts = {
-  title:
-    "Quem comprar até às 23h:59min do dia 18/11, leva estes presentes:",
-};
 
 export const blackfridayBonuses = [
   {
@@ -146,30 +141,16 @@ export const blackfridayStack = {
   title: "Se você comprasse cada coisa separada…",
   items: [
     { label: "6 cursos completos vitalícios", price: "R$ 534,00" },
-    { label: "1 encontro online em grupo com o Índio", price: "R$ 497,00" },
     { label: "1 seminário gravado", price: "R$ 197,00" },
-    { label: "1 kimono oficial JA Jiu Jitsu", price: "R$ 549,90" },
   ],
   totalLabel: "Valor real",
-  total: "R$ 1.777,90",
+  total: "R$ 731,00",
 };
 
 export const blackfridayExtras = {
-  title: "O valor justo para a Ultra Black seria de no mínimo R$ 997,00.",
+  title: "O valor justo para a Ultra Black seria de no mínimo R$ 409,93.",
   subtitle:
     "Mas quem entra hoje, não paga isso — e não paga de novo nunca mais.",
-  items: [
-    {
-      name: "Um encontro on-line em grupo",
-      description:
-        "Você envia posições do seu jogo e o Índio analisa ao vivo, com o grupo.",
-    },
-    {
-      name: "Sorteio de um kimono oficial",
-      note: "(Entre quem comprou até às 23h:59min do dia 18/11)",
-      description: "Kimono oficial da JA Jiu Jitsu Índio.",
-    },
-  ],
 };
 
 export const blackfridayOffer = {
@@ -183,9 +164,9 @@ export const blackfridayOffer = {
   ],
   asideLabel: "E do outro lado:",
   separatedLabel: "Se comprasse tudo separado",
-  separatedPrice: "R$ 1.777,90",
+  separatedPrice: "R$ 731,00",
   fairLabel: "Valor justo da Black",
-  fairPrice: "R$ 997,00",
+  fairPrice: "R$ 409,93",
   todayLabel: "Você entra hoje por apenas:",
   cashPrice: "R$ 197,00",
   cashNote: "à vista",

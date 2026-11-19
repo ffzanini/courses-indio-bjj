@@ -11,6 +11,8 @@ export type CourseAccent =
 export interface ListedCourse {
   id: string;
   imageUrl: string | null;
+  /** Capa retrato 2:3 da grade da home. */
+  cardImageUrl: string | null;
   accent: CourseAccent;
   checkoutUrl: string | null;
   learnMorePath: string;
@@ -22,6 +24,7 @@ export const listedCourses: ListedCourse[] = [
   {
     id: "drills",
     imageUrl: "/images/courses/drills-sequencia.webp",
+    cardImageUrl: "/images/courses/cards/drills.avif",
     accent: "drills",
     checkoutUrl: "https://pay.kiwify.com.br/hkR1jY2",
     learnMorePath: "/drills",
@@ -30,6 +33,7 @@ export const listedCourses: ListedCourse[] = [
   {
     id: "halfguard",
     imageUrl: "/images/courses/meia-guarda.webp",
+    cardImageUrl: "/images/courses/cards/meia-guarda.avif",
     accent: "halfguard",
     checkoutUrl: "https://pay.kiwify.com.br/T8jqqT5",
     learnMorePath: "/halfguard",
@@ -38,6 +42,7 @@ export const listedCourses: ListedCourse[] = [
   {
     id: "nogi",
     imageUrl: "/images/courses/no-gi.webp",
+    cardImageUrl: "/images/courses/cards/no-gi.avif",
     accent: "nogi",
     checkoutUrl: "https://pay.kiwify.com.br/9vQgsZI",
     learnMorePath: "/nogi",
@@ -46,6 +51,7 @@ export const listedCourses: ListedCourse[] = [
   {
     id: "guardpassing",
     imageUrl: "/images/courses/passagens-de-guarda.jpg",
+    cardImageUrl: "/images/courses/cards/passagem.avif",
     accent: "guardpassing",
     checkoutUrl: "https://pay.kiwify.com.br/X4gDESY",
     learnMorePath: "/guardpassing",
@@ -54,6 +60,7 @@ export const listedCourses: ListedCourse[] = [
   {
     id: "openguard",
     imageUrl: "/images/courses/guarda-aberta.webp",
+    cardImageUrl: "/images/courses/cards/guarda-aberta.avif",
     accent: "openguard",
     checkoutUrl: "https://pay.kiwify.com.br/BJSNRE2",
     learnMorePath: "/openguard",
@@ -62,6 +69,7 @@ export const listedCourses: ListedCourse[] = [
   {
     id: "escapes",
     imageUrl: "/images/courses/saidas-escapadas.webp",
+    cardImageUrl: "/images/courses/cards/escapadas.avif",
     accent: "neutral",
     checkoutUrl: "https://pay.kiwify.com.br/uXhtF8N",
     learnMorePath: "/escapes",

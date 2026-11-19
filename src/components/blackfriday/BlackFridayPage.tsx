@@ -19,7 +19,6 @@ import {
   blackfridayCtaLabel,
   blackfridayExtras,
   blackfridayFaq,
-  blackfridayGifts,
   blackfridayGuarantee,
   blackfridayHero,
   blackfridayLogoPath,
@@ -90,14 +89,12 @@ function Section({
 function OfferCard({
   eyebrow,
   name,
-  note,
   description,
   price,
   highlighted = false,
 }: {
   eyebrow: string;
   name: string;
-  note?: string;
   description: string;
   price?: string;
   highlighted?: boolean;
@@ -128,11 +125,6 @@ function OfferCard({
         )}
       >
         {name}
-        {note ? (
-          <span className="mt-2 block font-sans text-sm leading-snug font-normal text-white/70">
-            {note}
-          </span>
-        ) : null}
       </h3>
       <p className="mt-3 min-h-24 flex-1 text-sm leading-relaxed text-white-theme/80">
         {description}
@@ -272,18 +264,19 @@ export function BlackFridayPage({
               key={course.id}
               className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#111]"
             >
-              <div className="relative aspect-square bg-white/5">
+              <div className="bg-white/5">
                 {course.imageUrl ? (
                   <Image
                     src={course.imageUrl}
                     alt={course.name}
-                    fill
+                    width={400}
+                    height={600}
                     quality={75}
-                    className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ width: "100%", height: "auto" }}
                   />
                 ) : (
-                  <div className="flex h-full items-center justify-center px-6 text-center text-sm font-semibold tracking-wide text-white/40 uppercase">
+                  <div className="flex aspect-square items-center justify-center px-6 text-center text-sm font-semibold tracking-wide text-white/40 uppercase">
                     Imagem em breve
                   </div>
                 )}
@@ -387,24 +380,6 @@ export function BlackFridayPage({
 
       <Section>
         <h2 className="bf-display text-4xl leading-tight font-normal sm:text-5xl">
-          <Emphasis text={blackfridayGifts.title} phrase="18/11" />
-        </h2>
-        <ul className="mt-8 grid items-stretch gap-4 md:grid-cols-2">
-          {blackfridayExtras.items.map((item) => (
-            <li key={item.name} className="h-full">
-              <OfferCard
-                eyebrow="Presente"
-                name={item.name}
-                note={"note" in item ? item.note : undefined}
-                description={item.description}
-              />
-            </li>
-          ))}
-        </ul>
-      </Section>
-
-      <Section>
-        <h2 className="bf-display text-4xl leading-tight font-normal sm:text-5xl">
           {blackfridayStack.title}
         </h2>
         <dl className="mt-10 divide-y divide-white/10">
@@ -438,7 +413,7 @@ export function BlackFridayPage({
         <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-dark-theme">
           <div className="border-b border-white/10 px-6 py-10 text-center sm:px-12">
             <h2 className="bf-display text-3xl leading-tight font-normal sm:text-5xl">
-              <Emphasis text={blackfridayExtras.title} phrase="R$ 997,00" />
+              <Emphasis text={blackfridayExtras.title} phrase="R$ 409,93" />
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-white/60">
               {blackfridayExtras.subtitle}

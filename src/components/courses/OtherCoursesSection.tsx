@@ -11,42 +11,42 @@ const COURSES = [
   {
     id: "drills" as const,
     href: "/drills",
-    src: "/images/courses/drills-sequencia.webp",
+    src: "/images/courses/cards/drills.avif",
     titleKey: "courseDrillsTitle" as const,
     descKey: "courseDrillsDesc" as const,
   },
   {
     id: "halfguard" as const,
     href: "/halfguard",
-    src: "/images/courses/meia-guarda.webp",
+    src: "/images/courses/cards/meia-guarda.avif",
     titleKey: "courseHalfGuardTitle" as const,
     descKey: "courseHalfGuardDesc" as const,
   },
   {
     id: "nogi" as const,
     href: "/nogi",
-    src: "/images/courses/no-gi.webp",
+    src: "/images/courses/cards/no-gi.avif",
     titleKey: "courseNogiTitle" as const,
     descKey: "courseNogiDesc" as const,
   },
   {
     id: "guardpassing" as const,
     href: "/guardpassing",
-    src: "/images/courses/passagens-de-guarda.jpg",
+    src: "/images/courses/cards/passagem.avif",
     titleKey: "courseGuardPassingTitle" as const,
     descKey: "courseGuardPassingDesc" as const,
   },
   {
     id: "openguard" as const,
     href: "/openguard",
-    src: "/images/courses/guarda-aberta.webp",
+    src: "/images/courses/cards/guarda-aberta.avif",
     titleKey: "courseOpenGuardTitle" as const,
     descKey: "courseOpenGuardDesc" as const,
   },
   {
     id: "escapes" as const,
     href: "/escapes",
-    src: "/images/courses/saidas-escapadas.webp",
+    src: "/images/courses/cards/escapadas.avif",
     titleKey: "courseEscapesTitle" as const,
     descKey: "courseEscapesDesc" as const,
   },
@@ -89,14 +89,15 @@ export function OtherCoursesSection({
                 href={`/${locale}${course.href}`}
                 className="flex h-full flex-col overflow-hidden rounded-xl border border-foreground/20 bg-background shadow-sm transition-all hover:border-foreground/30 hover:shadow-md"
               >
-                <div className="relative aspect-square w-full bg-foreground/5">
+                <div className="w-full bg-foreground/5">
                   <Image
                     src={course.src}
                     alt={t.common.nav[course.titleKey]}
-                    fill
+                    width={400}
+                    height={600}
                     quality={75}
-                    className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 20vw"
+                    style={{ width: "100%", height: "auto" }}
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-4">

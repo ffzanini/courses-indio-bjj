@@ -6,6 +6,9 @@ import type { ListedCourse } from "@/data/courses";
 import { resolveLearnMoreUrl } from "@/data/courses";
 import { pathnameWithLocale } from "@/lib/locale-path";
 
+const CARD_IMAGE_WIDTH = 400;
+const CARD_IMAGE_HEIGHT = 600;
+
 function CourseImage({
   course,
   title,
@@ -13,6 +16,20 @@ function CourseImage({
   course: ListedCourse;
   title: string;
 }) {
+  if (course.cardImageUrl) {
+    return (
+      <Image
+        src={course.cardImageUrl}
+        alt={title}
+        width={CARD_IMAGE_WIDTH}
+        height={CARD_IMAGE_HEIGHT}
+        quality={75}
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        style={{ width: "100%", height: "auto" }}
+      />
+    );
+  }
+
   if (!course.imageUrl) return null;
 
   const isSvg = course.imageUrl.endsWith(".svg");
@@ -24,7 +41,7 @@ function CourseImage({
       fill
       quality={75}
       unoptimized={isSvg}
-      className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+      className="object-cover"
       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
     />
   );
@@ -52,10 +69,16 @@ export async function CourseCard({
   return (
     <article
       style={{ animationDelay: `${index * 60}ms` }}
-      className="rise-in group flex flex-col overflow-hidden rounded-2xl bg-card shadow-sm ring-1 ring-dark-theme/10 transition-shadow hover:ring-secondary/40"
+      className="rise-in flex flex-col overflow-hidden rounded-2xl bg-card shadow-sm ring-1 ring-dark-theme/10 transition-shadow hover:ring-secondary/40"
     >
-      <div className="relative aspect-square w-full overflow-hidden bg-foreground/5">
-        {course.imageUrl ? (
+      <div
+        className={
+          course.cardImageUrl
+            ? "w-full bg-foreground/5"
+            : "relative aspect-square w-full overflow-hidden bg-foreground/5"
+        }
+      >
+        {course.cardImageUrl || course.imageUrl ? (
           <CourseImage course={course} title={title} />
         ) : (
           <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-linear-to-br from-foreground/5 to-foreground/10 px-6 text-center">
