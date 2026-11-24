@@ -2,6 +2,7 @@ import { Instrument_Serif } from "next/font/google";
 import { getLocale, getTranslations } from "next-intl/server";
 
 import { AcademyLinksSection } from "@/components/AcademyLinksSection";
+import { BlackFridayHomeBanner } from "@/components/BlackFridayHomeBanner";
 import { CourseCard } from "@/components/CourseCard";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -60,17 +61,10 @@ export async function HomePage() {
 
         <section id="cursos" className="border-t border-primary-ja bg-white-theme text-dark-theme">
           <div className="mx-auto max-w-6xl space-y-10 px-4 py-16 sm:px-6 lg:space-y-14 lg:py-20">
-          <a
-            href="/blackfriday"
-            className="group flex flex-col items-start justify-between gap-5 rounded-3xl border-2 border-primary-ja bg-dark-theme px-6 py-6 text-white-theme shadow-[0_18px_50px_rgba(209,255,0,0.16)] sm:flex-row sm:items-center sm:px-8 sm:py-8"
-          >
-            <span className="bf-display text-2xl leading-tight font-normal sm:text-4xl">
-              <Emphasis text={t("blackfridayBanner")} phrase="Ultra Black Friday" />
-            </span>
-            <span className="shrink-0 rounded-full bg-primary-ja px-6 py-3.5 text-sm font-bold tracking-wide text-dark-theme uppercase shadow-[0_8px_24px_rgba(209,255,0,0.35)] transition group-hover:brightness-110">
-              {t("blackfridayBannerCta")}
-            </span>
-          </a>
+          <BlackFridayHomeBanner
+            text={t("blackfridayBanner")}
+            cta={t("blackfridayBannerCta")}
+          />
 
           <div>
             <h2 className="bf-display text-center text-3xl font-normal sm:text-4xl">
